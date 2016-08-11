@@ -1,0 +1,1704 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>7.2 单个云主机操作 · Mevoco 用户手册</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="author" content="Mevoco User Manual>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="install-linux.html" />
+    
+    
+    <link rel="prev" href="new-vm.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.mevoco.com" target="_blank" class="custom-link">Mevoco 官网</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../CopyRight.html">
+            
+                <a href="../CopyRight.html">
+            
+                    
+                    版权声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    引言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Introduction/">
+            
+                <a href="../Introduction/">
+            
+                    
+                    1 概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Introduction/introduct.html">
+            
+                <a href="../Introduction/introduct.html">
+            
+                    
+                    1.1 系统简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Introduction/function.html">
+            
+                <a href="../Introduction/function.html">
+            
+                    
+                    1.2 主要功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Requirement/">
+            
+                <a href="../Requirement/">
+            
+                    
+                    2 配置需求
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Requirement/network-env.html">
+            
+                <a href="../Requirement/network-env.html">
+            
+                    
+                    2.1 网络环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Requirement/hardware.html">
+            
+                <a href="../Requirement/hardware.html">
+            
+                    
+                    2.2 硬件要求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Requirement/software.html">
+            
+                <a href="../Requirement/software.html">
+            
+                    
+                    2.3 软件要求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../Requirement/zstack-centos.html">
+            
+                <a href="../Requirement/zstack-centos.html">
+            
+                    
+                    2.4 ZStack定制版CentOS 7.2安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../install/">
+            
+                <a href="../install/">
+            
+                    
+                    3 安装部署Mevoco
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../install/offline-install.html">
+            
+                <a href="../install/offline-install.html">
+            
+                    
+                    3.1 离线安装Mevoco
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../install/online-install.html">
+            
+                <a href="../install/online-install.html">
+            
+                    
+                    3.2 在线安装Mevoco
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../install/upgrade.html">
+            
+                <a href="../install/upgrade.html">
+            
+                    
+                    3.3 升级Mevoco
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../install/service.html">
+            
+                <a href="../install/service.html">
+            
+                    
+                    3.4 部署Mevoco服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../login/login.html">
+            
+                <a href="../login/login.html">
+            
+                    
+                    4 系统登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Wizard/">
+            
+                <a href="../Wizard/">
+            
+                    
+                    5 Wizard引导设置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Wizard/host.html">
+            
+                <a href="../Wizard/host.html">
+            
+                    
+                    5.1 添加物理机（计算节点）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Wizard/ps.html">
+            
+                <a href="../Wizard/ps.html">
+            
+                    
+                    5.2 添加主存储
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="../Wizard/local-storage.html">
+            
+                <a href="../Wizard/local-storage.html">
+            
+                    
+                    5.2.1 本地存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.2" data-path="../Wizard/nfs.html">
+            
+                <a href="../Wizard/nfs.html">
+            
+                    
+                    5.2.2 NFS主存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.3" data-path="../Wizard/ceph.html">
+            
+                <a href="../Wizard/ceph.html">
+            
+                    
+                    5.2.3 Ceph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.4" data-path="../Wizard/fusionStor.html">
+            
+                <a href="../Wizard/fusionStor.html">
+            
+                    
+                    5.2.4 FusionStor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5" data-path="../Wizard/sharedmountpoint.html">
+            
+                <a href="../Wizard/sharedmountpoint.html">
+            
+                    
+                    5.2.5 Shared Mount Point
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Wizard/bs.html">
+            
+                <a href="../Wizard/bs.html">
+            
+                    
+                    5.3 添加镜像服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../Wizard/instance-offering.html">
+            
+                <a href="../Wizard/instance-offering.html">
+            
+                    
+                    5.4 添加计算规格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../Wizard/image.html">
+            
+                <a href="../Wizard/image.html">
+            
+                    
+                    5.5 添加镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../Wizard/l2.html">
+            
+                <a href="../Wizard/l2.html">
+            
+                    
+                    5.6 添加二层网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../Wizard/l3.html">
+            
+                <a href="../Wizard/l3.html">
+            
+                    
+                    5.7 添加三层网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Main/">
+            
+                <a href="../Main/">
+            
+                    
+                    6 主界面管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Main/language.html">
+            
+                <a href="../Main/language.html">
+            
+                    
+                    6.1 选择语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../Main/base-setting.html">
+            
+                <a href="../Main/base-setting.html">
+            
+                    
+                    6.2 基础设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../Main/change-password.html">
+            
+                <a href="../Main/change-password.html">
+            
+                    
+                    6.3 修改密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    7 云主机管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="new-vm.html">
+            
+                <a href="new-vm.html">
+            
+                    
+                    7.1 新建云主机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9.2" data-path="single-vm.html">
+            
+                <a href="single-vm.html">
+            
+                    
+                    7.2 单个云主机操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="install-linux.html">
+            
+                <a href="install-linux.html">
+            
+                    
+                    7.3 安装云主机镜像-Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="install-windows.html">
+            
+                <a href="install-windows.html">
+            
+                    
+                    7.4 安装云主机镜像-Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="ssh-key.html">
+            
+                <a href="ssh-key.html">
+            
+                    
+                    7.5 SSH公钥管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="batch-vm-create.html">
+            
+                <a href="batch-vm-create.html">
+            
+                    
+                    7.6 批量新建云主机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="batch-vm-operation.html">
+            
+                <a href="batch-vm-operation.html">
+            
+                    
+                    7.7 批量操作云主机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="vm-monitor.html">
+            
+                <a href="vm-monitor.html">
+            
+                    
+                    7.8 云主机监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Host/">
+            
+                <a href="../Host/">
+            
+                    
+                    8 物理机管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Host/single-host.html">
+            
+                <a href="../Host/single-host.html">
+            
+                    
+                    8.1 单物理机操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Host/batach-host.html">
+            
+                <a href="../Host/batach-host.html">
+            
+                    
+                    8.2 批量物理机操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../Host/host-monitor.html">
+            
+                <a href="../Host/host-monitor.html">
+            
+                    
+                    8.3 物理机监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Image/">
+            
+                <a href="../Image/">
+            
+                    
+                    9 镜像管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../Image/single-image.html">
+            
+                <a href="../Image/single-image.html">
+            
+                    
+                    9.1 单镜像操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../Image/batach-image.html">
+            
+                <a href="../Image/batach-image.html">
+            
+                    
+                    9.2 批量镜像操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../Storage/">
+            
+                <a href="../Storage/">
+            
+                    
+                    10 存储管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../Storage/ps.html">
+            
+                <a href="../Storage/ps.html">
+            
+                    
+                    10.1 主存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../Storage/bs.html">
+            
+                <a href="../Storage/bs.html">
+            
+                    
+                    10.2 镜像服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Volumn/">
+            
+                <a href="../Volumn/">
+            
+                    
+                    11 云盘管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../Network/">
+            
+                <a href="../Network/">
+            
+                    
+                    12 网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../Network/network-setting.html">
+            
+                <a href="../Network/network-setting.html">
+            
+                    
+                    12.1 网络设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../Network/sg.html">
+            
+                <a href="../Network/sg.html">
+            
+                    
+                    12.2 安全组管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.2.1" data-path="../Network/new-sq.html">
+            
+                <a href="../Network/new-sq.html">
+            
+                    
+                    12.2.1 新建安全组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2.2" data-path="../Network/add-sg-rule.html">
+            
+                <a href="../Network/add-sg-rule.html">
+            
+                    
+                    12.2.2 添加安全组规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2.3" data-path="../Network/attach-sg-to-vm.html">
+            
+                <a href="../Network/attach-sg-to-vm.html">
+            
+                    
+                    12.2.3 添加云主机给安全组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../Network/eip.html">
+            
+                <a href="../Network/eip.html">
+            
+                    
+                    12.3 弹性IP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../HA/">
+            
+                <a href="../HA/">
+            
+                    
+                    13 云主机高可用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../HA/HA-setting.html">
+            
+                <a href="../HA/HA-setting.html">
+            
+                    
+                    13.1 云主机高可用设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../HA/HA-scene.html">
+            
+                <a href="../HA/HA-scene.html">
+            
+                    
+                    13.2 云主机高可用的应用场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../Instance-Offering/">
+            
+                <a href="../Instance-Offering/">
+            
+                    
+                    14 计算规格管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../Volume-Offering/">
+            
+                <a href="../Volume-Offering/">
+            
+                    
+                    15 云盘规格管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../Perf-Console-Proxy-Resource/">
+            
+                <a href="../Perf-Console-Proxy-Resource/">
+            
+                    
+                    16 性能监控、控制台代理与资源查询和排序
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../Perf-Console-Proxy-Resource/perf-monitor.html">
+            
+                <a href="../Perf-Console-Proxy-Resource/perf-monitor.html">
+            
+                    
+                    16.1 性能监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../Perf-Console-Proxy-Resource/console-proxy.html">
+            
+                <a href="../Perf-Console-Proxy-Resource/console-proxy.html">
+            
+                    
+                    16.2 控制台代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../Perf-Console-Proxy-Resource/resource-sort.html">
+            
+                <a href="../Perf-Console-Proxy-Resource/resource-sort.html">
+            
+                    
+                    16.3 资源查询和排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../User-MN/">
+            
+                <a href="../User-MN/">
+            
+                    
+                    17 用户管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../User-MN/account.html">
+            
+                <a href="../User-MN/account.html">
+            
+                    
+                    17.1 账户
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../User-MN/user-group.html">
+            
+                <a href="../User-MN/user-group.html">
+            
+                    
+                    17.2 用户及用户组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../User-MN/sharing-cancel.html">
+            
+                <a href="../User-MN/sharing-cancel.html">
+            
+                    
+                    17.3 资源共享与召回
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.4" data-path="../User-MN/change-owner.html">
+            
+                <a href="../User-MN/change-owner.html">
+            
+                    
+                    17.4 更改所有者
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.5" data-path="../User-MN/billing-setting.html">
+            
+                <a href="../User-MN/billing-setting.html">
+            
+                    
+                    17.5 计费设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.6" data-path="../User-MN/billing-account.html">
+            
+                <a href="../User-MN/billing-account.html">
+            
+                    
+                    17.6 账户计费
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../exception/">
+            
+                <a href="../exception/">
+            
+                    
+                    18 其他配置和异常处理指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../exception/exception.html">
+            
+                <a href="../exception/exception.html">
+            
+                    
+                    18.1 安装及部署异常处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1.1" data-path="../exception/install.html">
+            
+                <a href="../exception/install.html">
+            
+                    
+                    18.1.1 安装异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.1.2" data-path="../exception/upgrade.html">
+            
+                <a href="../exception/upgrade.html">
+            
+                    
+                    18.1.2 升级异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.1.3" data-path="../exception/service.html">
+            
+                <a href="../exception/service.html">
+            
+                    
+                    18.1.3 服务异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="../exception/login.html">
+            
+                <a href="../exception/login.html">
+            
+                    
+                    18.2 登录异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3" data-path="../exception/wizard-exception.html">
+            
+                <a href="../exception/wizard-exception.html">
+            
+                    
+                    18.3 引导设置异常处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.3.1" data-path="../exception/host.html">
+            
+                <a href="../exception/host.html">
+            
+                    
+                    18.3.1 添加物理机异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3.2" data-path="../exception/ps.html">
+            
+                <a href="../exception/ps.html">
+            
+                    
+                    18.3.2 添加主存储异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3.3" data-path="../exception/bs.html">
+            
+                <a href="../exception/bs.html">
+            
+                    
+                    18.3.3 添加镜像服务器异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3.4" data-path="../exception/instance-offering.html">
+            
+                <a href="../exception/instance-offering.html">
+            
+                    
+                    18.3.4 添加计算规格异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3.5" data-path="../exception/image.html">
+            
+                <a href="../exception/image.html">
+            
+                    
+                    18.3.5 添加云主机镜像异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3.6" data-path="../exception/l2.html">
+            
+                <a href="../exception/l2.html">
+            
+                    
+                    18.3.6 添加二层网络异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3.7" data-path="../exception/l3.html">
+            
+                <a href="../exception/l3.html">
+            
+                    
+                    18.3.7 添加三层网络配置异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.4" data-path="../exception/create-vm.html">
+            
+                <a href="../exception/create-vm.html">
+            
+                    
+                    18.4 创建云主机异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.5" data-path="../exception/main-page.html">
+            
+                <a href="../exception/main-page.html">
+            
+                    
+                    18.5 主界面异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../other-settting/">
+            
+                <a href="../other-settting/">
+            
+                    
+                    19 其他设置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" data-path="../other-setting/2nd-mn.html">
+            
+                <a href="../other-setting/2nd-mn.html">
+            
+                    
+                    19.1 安装第二个管理节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" data-path="../other-setting/single-mysql.html">
+            
+                <a href="../other-setting/single-mysql.html">
+            
+                    
+                    19.2 配置独立的MySQL服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.3" data-path="../other-setting/single-rabbitmq.html">
+            
+                <a href="../other-setting/single-rabbitmq.html">
+            
+                    
+                    19.3 配置独立的RabbitMQ服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.4" data-path="../other-setting/zstack.properties.html">
+            
+                <a href="../other-setting/zstack.properties.html">
+            
+                    
+                    19.4 zstack.properties核心配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.5" data-path="../other-setting/change-ip.html">
+            
+                <a href="../other-setting/change-ip.html">
+            
+                    
+                    19.5 更新Mevoco相关服务器IP地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.6" data-path="../other-setting/change-host-password.html">
+            
+                <a href="../other-setting/change-host-password.html">
+            
+                    
+                    19.6 Mevoco计算节点密码变更
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.7" data-path="../other-setting/change-host-env.html">
+            
+                <a href="../other-setting/change-host-env.html">
+            
+                    
+                    19.7 Mevoco管理节点更改物理环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.8" data-path="../other-setting/mysql-backup-recover.html">
+            
+                <a href="../other-setting/mysql-backup-recover.html">
+            
+                    
+                    19.8 Mevoco数据库备份与恢复  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.9" data-path="../other-setting/change-network-device.html">
+            
+                <a href="../other-setting/change-network-device.html">
+            
+                    
+                    19.9 CentOS7网卡设备编号变更
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.10" data-path="../other-setting/enlarge-local-storage.html">
+            
+                <a href="../other-setting/enlarge-local-storage.html">
+            
+                    
+                    19.10 本地存储空间扩容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.11" data-path="../other-setting/log-collection.html">
+            
+                <a href="../other-setting/log-collection.html">
+            
+                    
+                    19.11 日志Log收集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.12" data-path="../other-setting/upgrade-zstack-iso.html">
+            
+                <a href="../other-setting/upgrade-zstack-iso.html">
+            
+                    
+                    19.12 升级ZStack定制版ISO的yum源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.13" data-path="../other-setting/cassandra-backup-recover.html">
+            
+                <a href="../other-setting/cassandra-backup-recover.html">
+            
+                    
+                    19.13 Mevoco Cassandra数据库备份与恢复
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../authorization/">
+            
+                <a href="../authorization/">
+            
+                    
+                    20 授权
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../support/">
+            
+                <a href="../support/">
+            
+                    
+                    21 技术支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >7.2 单个云主机操作</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="72-&#x5355;&#x4E2A;&#x4E91;&#x4E3B;&#x673A;&#x64CD;&#x4F5C;">7.2 &#x5355;&#x4E2A;&#x4E91;&#x4E3B;&#x673A;&#x64CD;&#x4F5C;</h1><p>&#x5728;&#x4E91;&#x4E3B;&#x673A;&#x5217;&#x8868;&#x754C;&#x9762;,&#x70B9;&#x51FB;&#x76F8;&#x5E94;&#x4E91;&#x4E3B;&#x673A;&#x7684;&#x884C;,&#x53EF;&#x4EE5;&#x5C55;&#x5F00;&#x4E91;&#x4E3B;&#x673A;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x5E76;&#x5BF9;&#x4E91;&#x4E3B;&#x673A;&#x8FDB;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x64CD;&#x4F5C;,&#x5982;&#x56FE;7-2-1&#x6240;&#x793A;&#x3002;&#x6839;&#x636E;&#x865A;&#x62DF;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x7684;&#x4E0D;&#x540C;,&#x4E91;&#x4E3B;&#x673A;&#x7684;&#x64CD;&#x4F5C;&#x53EF;&#x652F;&#x6301;&#x542F;&#x52A8;&#x3001;&#x505C;&#x6B62;&#x3001;&#x91CD;&#x542F;&#x3001;&#x63A7;&#x5236;&#x53F0;&#x3001;&#x65B0;&#x5EFA;&#x4E91;&#x76D8;&#x3001;&#x52A0;&#x8F7D;&#x4E91;&#x76D8;&#x3001;&#x5378;&#x8F7D;&#x4E91;&#x76D8;&#x3001;&#x52A0;&#x8F7D;ISO&#x3001;&#x5378;&#x8F7D;ISO&#x3001;&#x4FEE;&#x6539;&#x542F;&#x52A8;&#x987A;&#x5E8F;&#x3001;&#x8FC1;&#x79FB;&#x3001; &#x5220;&#x9664;&#x3001;&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x3001;&#x521B;&#x5EFA;&#x955C;&#x50CF;&#x3001;&#x521B;&#x5EFA;&#x5FEB;&#x7167;&#x3001;&#x6062;&#x590D;&#x5FEB;&#x7167;&#x3001;&#x5220;&#x9664;&#x5FEB;&#x7167;&#x3001;&#x52A0;&#x8F7D;&#x7F51;&#x7EDC;&#x3001;&#x5378;&#x8F7D;&#x7F51;&#x7EDC;&#x3001;&#x8BBE;&#x7F6E;&#x9759;&#x6001;IP&#x3001;&#x53D6;&#x6D88;&#x9759;&#x6001;IP&#x8BBE;&#x7F6E;&#x3001;&#x4FEE;&#x6539;&#x540D;&#x5B57;&#x3001;&#x4FEE;&#x6539;&#x7B80;&#x4ECB;&#x3001;&#x4FEE;&#x6539;&#x9AD8;&#x53EF;&#x7528;&#x7EA7;&#x522B;&#x3001;&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x6807;&#x7B7E;&#x3001;&#x6307;&#x5B9A;&#x7269;&#x7406;&#x673A;&#x542F;&#x52A8;&#x3001;&#x66F4;&#x6539;&#x6240;&#x6709;&#x8005;&#x3001;&#x68C0;&#x67E5;&#x65E5;&#x5FD7;&#x7B49;&#x64CD;&#x4F5C;&#x3002;</p><p><img alt="png" src="../images/7-2-1.png" title="&#x56FE;7-2-1 &#x4E91;&#x4E3B;&#x673A;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x754C;&#x9762;"></p><h6 id="&#x56FE;7-2-1-&#x4E91;&#x4E3B;&#x673A;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x754C;&#x9762;">&#x56FE;7-2-1 &#x4E91;&#x4E3B;&#x673A;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x754C;&#x9762;</h6><p>&#x5728;&#x76F8;&#x5E94;&#x7684;&#x64CD;&#x4F5C;&#x4E2D;,&#x6709;&#x5982;&#x4E0B;&#x7EA6;&#x675F;&#x6761;&#x4EF6;:</p><ol><li><p>&#x8FD0;&#x884C;&#x72B6;&#x6001;&#x7684;&#x4E91;&#x4E3B;&#x673A;&#x652F;&#x6301;&#x505C;&#x6B62;&#x3001;&#x91CD;&#x542F;&#x3001;&#x63A7;&#x5236;&#x53F0;&#x3001;&#x65B0;&#x5EFA;&#x4E91;&#x76D8;&#x3001;&#x52A0;&#x8F7D;&#x4E91;&#x76D8;&#x3001;&#x5378;&#x8F7D;&#x4E91;&#x76D8;&#x3001;&#x52A0;&#x8F7D;ISO&#x3001;&#x5378;&#x8F7D;ISO&#x3001;&#x5220;&#x9664;&#x3001;&#x52A0;&#x8F7D;&#x7F51;&#x7EDC;&#x3001;&#x5378;&#x8F7D;&#x7F51;&#x7EDC;&#x3001;&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x6807;&#x7B7E;&#x3001;&#x8BBE;&#x7F6E;&#x9AD8;&#x53EF;&#x7528;&#x7EA7;&#x522B;&#x3001;&#x66F4;&#x6539;&#x6240;&#x6709;&#x8005;&#x3001;&#x521B;&#x5EFA;&#x5FEB;&#x7167;&#x3001;&#x5220;&#x9664;&#x5FEB;&#x7167;&#x3001;&#x67E5;&#x770B;&#x65E5;&#x5FD7;&#x7B49;&#x64CD;&#x4F5C;&#x3002;&#x5BF9;&#x4E8E;&#x955C;&#x50CF;&#x4ED3;&#x5E93;&#x7C7B;&#x578B;&#x7684;&#x955C;&#x50CF;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x652F;&#x6301;&#x521B;&#x5EFA;&#x955C;&#x50CF;&#x64CD;&#x4F5C;&#x3002;</p></li>
+<li><p>&#x505C;&#x6B62;&#x72B6;&#x6001;&#x7684;&#x4E91;&#x4E3B;&#x673A;&#x652F;&#x6301;&#x542F;&#x52A8;&#x3001;&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x3001;&#x65B0;&#x5EFA;&#x4E91;&#x76D8;&#x3001;&#x52A0;&#x8F7D;&#x4E91;&#x76D8;&#x3001;&#x521B;&#x5EFA;&#x955C;&#x50CF;&#x3001;&#x52A0;&#x8F7D;ISO&#x3001;&#x5220;&#x9664;&#x3001;&#x52A0;&#x8F7D;&#x7F51;&#x7EDC;&#x3001;&#x5378;&#x8F7D;&#x7F51;&#x7EDC;&#x3001;&#x8BBE;&#x7F6E;&#x9759;&#x6001;IP&#x3001;&#x53D6;&#x6D88;&#x9759;&#x6001;IP&#x8BBE;&#x7F6E;&#x3001;&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x6807;&#x7B7E;&#x3001;&#x8BBE;&#x7F6E;&#x9AD8;&#x53EF;&#x7528;&#x7EA7;&#x522B;&#x3001;&#x6307;&#x5B9A;&#x7269;&#x7406;&#x673A;&#x542F;&#x52A8;&#x3001;&#x66F4;&#x6539;&#x6240;&#x6709;&#x8005;&#x3001;&#x521B;&#x5EFA;&#x5FEB;&#x7167;&#x3001;&#x5220;&#x9664;&#x5FEB;&#x7167;&#x3001;&#x6062;&#x590D;&#x5FEB;&#x7167;&#x3001;&#x67E5;&#x770B;&#x65E5;&#x5FD7;&#x7B49;&#x64CD;&#x4F5C;&#x3002;</p></li>
+<li><p>&#x5220;&#x9664;&#x72B6;&#x6001;&#x7684;&#x4E91;&#x4E3B;&#x673A;&#x652F;&#x6301;&#x6062;&#x590D;&#x3001;&#x5F7B;&#x5E95;&#x5220;&#x9664;&#x548C;&#x66F4;&#x6539;&#x6240;&#x6709;&#x8005;&#x7B49;&#x64CD;&#x4F5C;&#x3002;</p></li>
+<li><p>&#x4E3B;&#x5B58;&#x50A8;&#x5982;&#x679C;&#x4E3A;&#x672C;&#x5730;&#x5B58;&#x50A8;,&#x8FD0;&#x884C;&#x4E2D;&#x7684;&#x4E91;&#x4E3B;&#x673A;&#x4E0D;&#x652F;&#x6301;&#x8FC1;&#x79FB;,&#x5FC5;&#x987B;&#x505C;&#x6B62;&#x4E91;&#x4E3B;&#x673A;&#x624D;&#x53EF;&#x8FDB;&#x884C;&#x8FC1;&#x79FB;&#x3002;&#x6B64;&#x65F6;&#x7684;&#x8FC1;&#x79FB;&#x4E3B;&#x8981;&#x4E3A;&#x8FC1;&#x79FB;&#x6839;&#x4E91;&#x76D8;&#x6216;&#x6570;&#x636E;&#x4E91;&#x76D8;&#x3002;</p></li>
+<li><p>&#x4E3B;&#x5B58;&#x50A8;&#x5982;&#x679C;&#x4E3A;&#x7F51;&#x7EDC;&#x5171;&#x4EAB;&#x5B58;&#x50A8;,&#x8FD0;&#x884C;&#x4E2D;&#x7684;&#x4E91;&#x4E3B;&#x673A;&#x652F;&#x6301;&#x8FC1;&#x79FB;,&#x505C;&#x6B62;&#x72B6;&#x6001;&#x7684;&#x4E91;&#x4E3B;&#x673A;&#x4E0D;&#x652F;&#x6301;&#x8FC1;&#x79FB;&#x3002;&#x6B64;&#x65F6;&#x7684;&#x8FC1;&#x79FB;&#x4E3A;&#x4E91;&#x4E3B;&#x673A;&#x5728;&#x7EBF;&#x5B9E;&#x65F6;&#x8FC1;&#x79FB;&#x3002;&#x4E3B;&#x8981;&#x4E3A;&#x62F7;&#x8D1D;&#x5185;&#x5B58;&#x53CA;CPU&#x76F8;&#x5173;&#x5BC4;&#x5B58;&#x5668;&#x72B6;&#x6001;&#x3002;</p></li>
+<li><p>&#x5F7B;&#x5E95;&#x5220;&#x9664;&#x7684;&#x64CD;&#x4F5C;&#x9700;&#x8981;&#x5C06;&#x4E91;&#x4E3B;&#x673A;&#x9996;&#x5148;&#x5220;&#x9664;&#x4F5C;&#x4E3A;&#x524D;&#x63D0;&#x3002;</p></li></ol>
+<p>&#x5BF9;&#x4E91;&#x4E3B;&#x673A;&#x64CD;&#x4F5C;&#x7684;&#x5404;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;:</p><p>1.&#x542F;&#x52A8;:&#x5C06;&#x5904;&#x4E8E;&#x505C;&#x6B62;&#x72B6;&#x6001;&#x7684;&#x4E91;&#x4E3B;&#x673A;&#x542F;&#x52A8;&#x8D77;&#x6765;,&#x8FDB;&#x5165;&#x4E91;&#x4E3B;&#x673A;&#x7CFB;&#x7EDF;;</p><p>2.&#x505C;&#x6B62;:&#x5C06;&#x5904;&#x4E8E;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#x7684;&#x4E91;&#x4E3B;&#x673A;&#x505C;&#x6B62;&#x6389;,&#x4F7F;&#x4E91;&#x4E3B;&#x673A;&#x7CFB;&#x7EDF;&#x5173;&#x673A;;</p><p>3.&#x91CD;&#x542F;:&#x5C06;&#x5904;&#x4E8E;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#x7684;&#x4E91;&#x4E3B;&#x673A;&#x91CD;&#x542F;,&#x4F7F;&#x4E91;&#x4E3B;&#x673A;&#x7CFB;&#x7EDF;&#x91CD;&#x65B0;&#x542F;&#x52A8;;</p><p>4.&#x63A7;&#x5236;&#x53F0;:&#x5C06;&#x8FDB;&#x5165;&#x4E91;&#x4E3B;&#x673A;&#x7CFB;&#x7EDF;&#x7684;&#x63A7;&#x5236;&#x754C;&#x9762;,&#x53EF;&#x4EE5;&#x767B;&#x5F55;&#x63A7;&#x5236;&#x4E91;&#x4E3B;&#x673A;;</p><p>5.&#x65B0;&#x5EFA;&#x4E91;&#x76D8;:&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x4E91;&#x76D8;&#x5E76;&#x6DFB;&#x52A0;&#x7ED9;&#x4E91;&#x4E3B;&#x673A;&#x3002;&#x5177;&#x4F53;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#x793A;:</p><p>a) &#x5728;&#x4E91;&#x4E3B;&#x673A;&#x8BE6;&#x60C5;&#x9875;&#x7684;&#x4E91;&#x76D8;&#x680F;,&#x70B9;&#x51FB;&#x65B0;&#x5EFA;&#x4E91;&#x76D8;&#x6309;&#x94AE;,&#x8FDB;&#x5165;&#x65B0;&#x5EFA;&#x4E91;&#x76D8;&#x754C;&#x9762;,&#x5982;&#x56FE;7-2-2&#x6240;&#x793A;;</p><p>b) &#x8F93;&#x5165;&#x4E91;&#x76D8;&#x540D;&#x79F0;&#x5E76;&#x9009;&#x62E9;&#x5BF9;&#x5E94;&#x7684;&#x4E91;&#x76D8;&#x89C4;&#x683C;,&#x70B9;&#x51FB;&#x786E;&#x5B9A;</p><p>&#x6CE8;&#x610F;:&#x5728;&#x7CFB;&#x7EDF;&#x521D;&#x59CB;&#x5316;&#x540E;,&#x82E5;&#x7CFB;&#x7EDF;&#x6CA1;&#x6709;&#x6DFB;&#x52A0;&#x8FC7;&#x4E91;&#x76D8;&#x89C4;&#x683C;,&#x9700;&#x8981;&#x63D0;&#x524D;&#x5728;&#x4E91;&#x76D8;&#x89C4;&#x683C;&#x754C;&#x9762;,&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x4E91;&#x76D8;&#x89C4;&#x683C;&#x3002;&#x8BE6;&#x89C1;&#x7B2C;11&#x7AE0;&#x4E91;&#x76D8;&#x7BA1;&#x7406;&#x3002;</p><p><img alt="png" src="../images/7-2-2.png" title="&#x56FE;7-2-2 &#x65B0;&#x5EFA;&#x4E91;&#x76D8;&#x754C;&#x9762;"></p><h6 id="&#x56FE;7-2-2-&#x65B0;&#x5EFA;&#x4E91;&#x76D8;&#x754C;&#x9762;">&#x56FE;7-2-2 &#x65B0;&#x5EFA;&#x4E91;&#x76D8;&#x754C;&#x9762;</h6><p>6.&#x52A0;&#x8F7D;&#x4E91;&#x76D8;:&#x5C06;&#x4E00;&#x4E2A;&#x53EF;&#x7528;&#x7684;&#x672A;&#x6302;&#x8F7D;&#x4E91;&#x76D8;&#x6302;&#x8F7D;&#x5230;&#x5F53;&#x524D;&#x4E91;&#x4E3B;&#x673A;&#x3002;&#x9700;&#x6CE8;&#x610F;:&#x5982;&#x679C;&#x4E3B;&#x5B58;&#x50A8;&#x4E3A;&#x672C;&#x5730;&#x5B58;&#x50A8;,&#x90A3;&#x4E48;&#x8BE5;&#x4E91;&#x76D8;&#x9700;&#x8981;&#x548C;&#x4E91;&#x4E3B;&#x673A;&#x5728;&#x76F8;&#x540C;&#x7684;&#x7269;&#x7406;&#x673A;&#x4E0A;&#x3002;&#x5F53;&#x76EE;&#x6807;&#x4E91;&#x76D8;&#x548C;&#x4E91;&#x4E3B;&#x673A;&#x4E0D;&#x5728;&#x76F8;&#x540C;&#x7269;&#x7406;&#x673A;&#x7684;&#x65F6;,&#x9700;&#x53C2;&#x8003;&#x7B2C;11&#x7AE0;&#x4E91;&#x76D8;&#x7BA1;&#x7406;&#x7684;&#x4E91;&#x76D8;&#x8BE6;&#x60C5;&#x91CC;&#x628A;&#x4E91;&#x76D8;&#x8FC1;&#x79FB;&#x5230;&#x4E91;&#x4E3B;&#x673A;&#x5BF9;&#x5E94;&#x7684;&#x7269;&#x7406;&#x673A;&#x4E0A;&#x3002;</p><p>7.&#x5378;&#x8F7D;&#x4E91;&#x76D8;:&#x5C06;&#x7CFB;&#x7EDF;&#x4E4B;&#x524D;&#x6DFB;&#x52A0;&#x8FC7;&#x7684;&#x6570;&#x636E;&#x4E91;&#x76D8;&#x79FB;&#x9664;&#x6389;,&#x5177;&#x4F53;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#x793A;:</p><p>a)&#x70B9;&#x51FB;&#x5378;&#x8F7D;&#x4E91;&#x76D8;&#x6309;&#x94AE;,&#x8FDB;&#x5165;&#x5378;&#x8F7D;&#x4E91;&#x76D8;&#x754C;&#x9762;,&#x5982;&#x56FE;7-2-3&#x6240;&#x793A;;</p><p>b)&#x4ECE;&#x4E91;&#x76D8;&#x5217;&#x8868;&#x9009;&#x62E9;&#x9700;&#x8981;&#x79FB;&#x9664;&#x7684;&#x4E91;&#x76D8;,&#x70B9;&#x51FB;&#x786E;&#x8BA4;&#x8FDB;&#x884C;&#x79FB;&#x9664;</p><p><img alt="png" src="../images/7-2-3.png" title="&#x56FE; 7-2-3 &#x5378;&#x8F7D;&#x4E91;&#x76D8;&#x754C;&#x9762;"></p><h6 id="&#x56FE;-7-2-3-&#x5378;&#x8F7D;&#x4E91;&#x76D8;&#x754C;&#x9762;">&#x56FE; 7-2-3 &#x5378;&#x8F7D;&#x4E91;&#x76D8;&#x754C;&#x9762;</h6><p>8.&#x52A0;&#x8F7D;ISO:&#x6DFB;&#x52A0;ISO&#x955C;&#x50CF;&#x5230;&#x4E91;&#x4E3B;&#x673A;&#x4E2D;,&#x5177;&#x4F53;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#x793A;:</p><p>a)&#x70B9;&#x51FB;&#x52A0;&#x8F7D;ISO&#x6309;&#x94AE;,&#x8FDB;&#x5165;&#x52A0;&#x8F7D;ISO&#x754C;&#x9762;;</p><p>b)&#x4ECE;ISO&#x5217;&#x8868;&#x9009;&#x62E9;&#x9700;&#x8981;&#x52A0;&#x8F7D;&#x7684;ISO,&#x70B9;&#x51FB;&#x786E;&#x8BA4;&#x8FDB;&#x884C;&#x52A0;&#x8F7D;&#x3002;</p><p>9.&#x5378;&#x8F7D;ISO:&#x5C06;&#x5DF2;&#x6DFB;&#x52A0;&#x7684;ISO&#x955C;&#x50CF;&#x4ECE;&#x4E91;&#x4E3B;&#x673A;&#x4E2D;&#x5378;&#x8F7D;,&#x70B9;&#x51FB;&#x5378;&#x8F7D;ISO&#x6309;&#x94AE;,&#x76F4;&#x63A5;&#x5378;&#x8F7D;ISO&#x3002;</p><p>10.&#x4FEE;&#x6539;&#x542F;&#x52A8;&#x987A;&#x5E8F;:&#x5982;&#x679C;&#x7528;&#x6237;&#x662F;&#x5728;&#x4E91;&#x4E3B;&#x673A;&#x521B;&#x5EFA;&#x4E4B;&#x540E;&#x6302;&#x8F7D;ISO(&#x5728;&#x521B;&#x5EFA;&#x4E91;&#x4E3B;&#x673A;&#x65F6;,&#x955C;&#x50CF;&#x9009; &#x62E9;&#x4E3A;ISO&#x65F6;,&#x4F1A;&#x9996;&#x5148;&#x4ECE;ISO&#x542F;&#x52A8;),&#x4E91;&#x4E3B;&#x673A;&#x9ED8;&#x8BA4;&#x7684;&#x542F;&#x52A8;&#x987A;&#x5E8F;&#x662F;:&#x7B2C;&#x4E00;&#x4ECE;&#x786C;&#x76D8;&#x5F15;&#x5BFC;,&#x7B2C;&#x4E8C;&#x4ECE;ISO &#x5F15;&#x5BFC;&#x3002;</p><p>&#x7528;&#x6237;&#x5982;&#x9700;&#x66F4;&#x6539;&#x542F;&#x52A8;&#x987A;&#x5E8F;,&#x4F8B;&#x5982;&#x901A;&#x8FC7;ISO&#x542F;&#x52A8;&#x6765;&#x4FEE;&#x590D;&#x786C;&#x76D8;,&#x9700;&#x70B9;&#x51FB;&#x4E91;&#x4E3B;&#x673A;&#x8BE6;&#x60C5;&#x7684;&#x201C;&#x542F;&#x52A8;&#x987A;&#x5E8F;&#x201D; &#x6309;&#x94AE;&#x6765;&#x66F4;&#x6539;&#x4E91;&#x4E3B;&#x673A;&#x7684;&#x542F;&#x52A8;&#x987A;&#x5E8F;&#x3002;</p><p>&#x5982;&#x56FE;7-2-4&#x53CA;7-2-5&#x6240;&#x793A;&#x3002;&#x5176;&#x4E2D;Cdrom&#x4EE3;&#x8868;ISO&#x5F15;&#x5BFC;&#x65F6;&#x7684;&#x865A;&#x62DF;&#x5149;&#x9A71;&#x3002;&#x9700;&#x6CE8;&#x610F;:&#x5982;&#x679C;&#x9009;&#x62E9;CdRom&#x662F;&#x7B2C;&#x4E00;&#x542F;&#x52A8;&#x987A;&#x5E8F;,&#x53EA;&#x6709;&#x901A;&#x8FC7;UI&#x4E0A;&#x70B9;&#x51FB;&#x505C;&#x6B62;&#x548C;&#x542F;&#x52A8;&#x540E;,&#x624D;&#x4F1A;&#x4ECE;CdRom&#x542F;&#x52A8;&#x3002;&#x5982;&#x679C;&#x76F4;&#x63A5;&#x5728;&#x4E91;&#x4E3B;&#x673A;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E2D;&#x901A;&#x8FC7;reboot&#x547D;&#x4EE4;&#x91CD;&#x542F;,&#x8FD8;&#x662F;&#x4F1A;&#x4ECE;&#x786C;&#x76D8;&#x542F;&#x52A8;&#x3002;</p><p>&#x7528;&#x6237;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x521B;&#x5EFA;&#x4E91;&#x4E3B;&#x673A;&#x9009;&#x62E9;ISO&#x8FDB;&#x884C;&#x5B89;&#x88C5;&#x65F6;,&#x65E0;&#x9700;&#x9009;&#x62E9;&#x542F;&#x52A8;&#x987A;&#x5E8F;,Mevoco&#x4F1A;&#x81EA;&#x884C;&#x4ECE;ISO&#x5F15;&#x5BFC;&#x3002;</p><p><img alt="png" src="../images/7-2-4.png" title="&#x56FE;7-2-4 &#x70B9;&#x51FB;&#x542F;&#x52A8;&#x987A;&#x5E8F;"></p><h6 id="&#x56FE;7-2-4-&#x70B9;&#x51FB;&#x542F;&#x52A8;&#x987A;&#x5E8F;">&#x56FE;7-2-4 &#x70B9;&#x51FB;&#x542F;&#x52A8;&#x987A;&#x5E8F;</h6><p><img alt="png" src="../images/7-2-5.png" title="&#x56FE;7-2-5 &#x4FEE;&#x6539;&#x542F;&#x52A8;&#x987A;&#x5E8F;"></p><h6 id="&#x56FE;7-2-5-&#x4FEE;&#x6539;&#x542F;&#x52A8;&#x987A;&#x5E8F;">&#x56FE;7-2-5 &#x4FEE;&#x6539;&#x542F;&#x52A8;&#x987A;&#x5E8F;</h6><p>11.&#x8FC1;&#x79FB;:&#x5C06;&#x4E91;&#x4E3B;&#x673A;&#x8FC1;&#x79FB;&#x81F3;&#x5176;&#x4ED6;&#x8BA1;&#x7B97;&#x8282;&#x70B9;&#x3002;&#x8FC1;&#x79FB;&#x7684;&#x901F;&#x5EA6;&#x4E0E;&#x4E24;&#x53F0;&#x4E3B;&#x673A;&#x7684;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&#x6709;&#x5173;,&#x5982;&#x679C;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&#x8F83;&#x4F4E;,&#x8FC1;&#x79FB;&#x901F;&#x5EA6;&#x53EF;&#x80FD;&#x8F83;&#x6162;&#x3002;&#x5177;&#x4F53;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#x793A;:</p><p>a)&#x70B9;&#x51FB;&#x8FC1;&#x79FB;&#x6309;&#x94AE;,&#x8FDB;&#x5165;&#x8FC1;&#x79FB;&#x754C;&#x9762;,&#x5982;&#x56FE;7-2-6&#x6240;&#x793A;;</p><p>b)&#x4ECE;&#x8BA1;&#x7B97;&#x8282;&#x70B9;&#x5217;&#x8868;&#x9009;&#x62E9;&#x9700;&#x8981;&#x8FC1;&#x79FB;&#x7684;&#x76EE;&#x7684;&#x673A;&#x5668;,&#x70B9;&#x51FB;&#x786E;&#x8BA4;&#x8FDB;&#x884C;&#x8FC1;&#x79FB;&#x3002;</p><p><img alt="png" src="../images/7-2-6.png" title="&#x56FE;7-2-6 &#x4E91;&#x4E3B;&#x673A;&#x8FC1;&#x79FB;&#x9009;&#x62E9;&#x7269;&#x7406;&#x673A;&#x754C;&#x9762;"></p><h6 id="&#x56FE;7-2-6-&#x4E91;&#x4E3B;&#x673A;&#x8FC1;&#x79FB;&#x9009;&#x62E9;&#x7269;&#x7406;&#x673A;&#x754C;&#x9762;">&#x56FE;7-2-6 &#x4E91;&#x4E3B;&#x673A;&#x8FC1;&#x79FB;&#x9009;&#x62E9;&#x7269;&#x7406;&#x673A;&#x754C;&#x9762;</h6><p>12.&#x5220;&#x9664;:Mevoco&#x652F;&#x6301;&#x4E09;&#x79CD;&#x4E91;&#x4E3B;&#x673A;&#x5220;&#x9664;&#x6A21;&#x5F0F;,&#x53EF;&#x4EE5;&#x5728;&#x57FA;&#x7840;&#x8BBE;&#x7F6E;&#x4E2D;&#x4FEE;&#x6539;:</p><p>a)&#x7ACB;&#x523B;&#x5220;&#x9664;:&#x5F53;&#x7528;&#x6237;&#x5220;&#x9664;&#x4E91;&#x4E3B;&#x673A;&#x7684;&#x65F6;&#x5019;,&#x4E91;&#x4E3B;&#x673A;&#x76F8;&#x5173;&#x8D44;&#x6E90;&#x4F1A;&#x88AB;&#x7ACB;&#x523B;&#x5220;&#x9664;&#x3002;</p><p>b)&#x5EF6;&#x65F6;&#x5220;&#x9664;(&#x9ED8;&#x8BA4;):&#x5F53;&#x7528;&#x6237;&#x5220;&#x9664;&#x4E91;&#x4E3B;&#x673A;&#x7684;&#x65F6;&#x5019;,&#x4E91;&#x4E3B;&#x673A;&#x4F1A;&#x88AB;&#x6807;&#x8BB0;&#x4E3A;Destroyed&#x3002;24&#x5C0F;&#x65F6;&#x540E;,&#x624D;&#x4F1A;&#x5F7B;&#x5E95;&#x5220;&#x9664;,&#x5982;&#x56FE;7-2-7&#x6240;&#x793A;&#x3002;&#x5220;&#x9664;&#x5EF6;&#x65F6;&#x53EF;&#x4EE5;&#x5728;&#x57FA;&#x7840;&#x8BBE;&#x7F6E;&#x4E2D;&#x4FEE;&#x6539;&#x3002;</p><p>c)&#x6C38;&#x4E0D;&#x5220;&#x9664;:&#x5F53;&#x7528;&#x6237;&#x5220;&#x9664;&#x4E91;&#x4E3B;&#x673A;&#x540E;,&#x4E91;&#x4E3B;&#x673A;&#x76F8;&#x5173;&#x8D44;&#x6E90;&#x6C38;&#x8FDC;&#x4E0D;&#x5220;&#x9664;&#x3002;</p><p><img alt="png" src="../images/7-2-7.png" title="&#x56FE;7-2-7 &#x5EF6;&#x65F6;&#x5220;&#x9664;&#x540E;&#x4E91;&#x4E3B;&#x673A;&#x754C;&#x9762;"></p><h6 id="&#x56FE;7-2-7-&#x5EF6;&#x65F6;&#x5220;&#x9664;&#x540E;&#x4E91;&#x4E3B;&#x673A;&#x754C;&#x9762;">&#x56FE;7-2-7 &#x5EF6;&#x65F6;&#x5220;&#x9664;&#x540E;&#x4E91;&#x4E3B;&#x673A;&#x754C;&#x9762;</h6><p>&#x5982;&#x679C;&#x5728;&#x5220;&#x9664;&#x4E91;&#x4E3B;&#x673A;&#x7684;&#x65F6;&#x5019;&#x540C;&#x65F6;&#x52FE;&#x9009;&#x4E86;&#x201C;&#x540C;&#x65F6;&#x5220;&#x9664;&#x4E91;&#x76D8;&#x201D;,&#x5728;&#x5220;&#x9664;&#x4E91;&#x4E3B;&#x673A;&#x65F6;&#x5C06;&#x4F1A;&#x540C;&#x65F6;&#x5220;&#x9664;&#x8BE5;&#x4E91;&#x4E3B;&#x673A;&#x4E0A;&#x6240;&#x6709;&#x7684;&#x4E91;&#x76D8;&#x3002;&#x5982;&#x56FE;7-2-8&#x6240;&#x793A;:</p><p><img alt="png" src="../images/7-2-8.png" title="&#x56FE;7-2-8 &#x540C;&#x65F6;&#x5220;&#x9664;&#x4E91;&#x76D8;&#x754C;&#x9762;"></p><h6 id="&#x56FE;7-2-8-&#x540C;&#x65F6;&#x5220;&#x9664;&#x4E91;&#x76D8;&#x754C;&#x9762;">&#x56FE;7-2-8 &#x540C;&#x65F6;&#x5220;&#x9664;&#x4E91;&#x76D8;&#x754C;&#x9762;</h6><p>13.&#x5F7B;&#x5E95;&#x5220;&#x9664;&#x4E91;&#x4E3B;&#x673A;/&#x6062;&#x590D;&#x4E91;&#x4E3B;&#x673A;:&#x5F53;&#x9009;&#x62E9;&#x5EF6;&#x65F6;&#x5220;&#x9664;&#x4E91;&#x4E3B;&#x673A;&#x540E;,&#x4E91;&#x4E3B;&#x673A;&#x4F1A;&#x8FDB;&#x5165;&#x201C;Destroyed&#x201D;&#x7684;&#x72B6;&#x6001;&#x3002;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x70B9;&#x51FB;&#x8BE5;&#x4E91;&#x4E3B;&#x673A;,&#x9009;&#x62E9;&#x5BF9;&#x5E94;&#x7684;&#x6309;&#x94AE;&#x6062;&#x590D;&#x5220;&#x9664;&#x7684;&#x4E91;&#x4E3B;&#x673A;,&#x6216;&#x8005;&#x5F7B;&#x5E95;&#x5220;&#x9664;&#x5B83;, &#x5982;&#x56FE;7-2-9&#x6240;&#x793A;&#x3002;</p><p>a)&#x6062;&#x590D;:&#x9009;&#x62E9;&#x6062;&#x590D;&#x7684;&#x4E91;&#x4E3B;&#x673A;,&#x5C06;&#x4F1A;&#x8FDB;&#x5165;&#x5230;&#x201C;Stopped&#x201D;&#x7684;&#x72B6;&#x6001;,&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x542F;&#x52A8;&#x6309;&#x94AE;,&#x542F;&#x52A8;&#x8BE5;&#x4E91;&#x4E3B;&#x673A;&#x3002;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x4E91;&#x4E3B;&#x673A;,&#x8BE5;&#x4E91;&#x4E3B;&#x673A;&#x7684;IP&#x5730;&#x5740;&#x5C06;&#x4F1A;&#x8FD4;&#x56DE;IP&#x5730;&#x5740;&#x6C60;&#x4E2D;&#x3002;&#x5F53;&#x518D;&#x6B21;&#x6062;&#x590D;&#x8BE5;&#x4E91; &#x4E3B;&#x673A;&#x65F6;,&#x8FD9;&#x4E2A;&#x4E91;&#x4E3B;&#x673A;&#x7684;IP&#x5730;&#x5740;&#x53EF;&#x80FD;&#x4E0E;&#x5220;&#x9664;&#x524D;&#x4E0D;&#x540C;&#x3002;</p><p>b)&#x5F7B;&#x5E95;&#x5220;&#x9664;:&#x9009;&#x62E9;&#x5F7B;&#x5E95;&#x5220;&#x9664;&#x540E;,&#x4E91;&#x4E3B;&#x673A;&#x76F8;&#x5173;&#x8D44;&#x6E90;&#x4F1A;&#x88AB;&#x5F7B;&#x5E95;&#x5220;&#x9664;&#x6389;&#x3002;&#x955C;&#x50CF;&#x6587;&#x4EF6;,&#x4E91;&#x76D8;&#x4E5F;&#x6709;&#x76F8;&#x540C;&#x7684;&#x6062;&#x590D;&#x548C;&#x5F7B;&#x5E95;&#x5220;&#x9664;&#x7684;&#x6309;&#x94AE;&#x3002;&#x7528;&#x6237;&#x9700;&#x8C28;&#x614E;&#x64CD;&#x4F5C;&#x3002;</p><p><img alt="png" src="../images/7-2-9.png" title="&#x56FE;7-2-9 &#x5F7B;&#x5E95;&#x5220;&#x9664;/&#x6062;&#x590D;&#x4E91;&#x4E3B;&#x673A;&#x754C;&#x9762;"></p><h6 id="&#x56FE;7-2-9-&#x5F7B;&#x5E95;&#x5220;&#x9664;&#x6062;&#x590D;&#x4E91;&#x4E3B;&#x673A;&#x754C;&#x9762;">&#x56FE;7-2-9 &#x5F7B;&#x5E95;&#x5220;&#x9664;/&#x6062;&#x590D;&#x4E91;&#x4E3B;&#x673A;&#x754C;&#x9762;</h6><p>14.&#x4FEE;&#x6539;&#x914D;&#x7F6E;:&#x5BF9;&#x5DF2;&#x505C;&#x6B62;&#x7684;&#x4E91;&#x4E3B;&#x673A;,&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x70B9;&#x51FB;&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6765;&#x9009;&#x62E9;&#x5176;&#x4ED6;&#x53EF;&#x7528;&#x7684;&#x8BA1;&#x7B97;&#x89C4;&#x683C;,&#x5728;&#x65B0;&#x5F39;&#x51FA;&#x7684;&#x754C;&#x9762;&#x9009;&#x62E9;&#x9700;&#x66F4;&#x6362;&#x4F7F;&#x7528;&#x7684;&#x8BA1;&#x7B97;&#x89C4;&#x683C;&#x6765;&#x8C03;&#x6574;&#x4E91;&#x4E3B;&#x673A;&#x4F7F;&#x7528;&#x7684;CPU&#x3001;&#x5185;&#x5B58;&#x6216;&#x5176;&#x4ED6;&#x8D44;&#x6E90;&#x3002;</p><ol><li>&#x521B;&#x5EFA;&#x955C;&#x50CF;&#xFF1A;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5BF9;&#x4E91;&#x4E3B;&#x673A;&#x8FDB;&#x884C;&#x5B9A;&#x5236;&#xFF0C;&#x53EF;&#x4FDD;&#x5B58;&#x4E3A;&#x955C;&#x50CF;&#x6A21;&#x677F;&#x6587;&#x4EF6;&#x3002;&#x5982;&#x679C;&#x7528;&#x6237;&#x4F7F;&#x7528;&#x955C;&#x50CF;&#x4ED3;&#x5E93;&#x7C7B;&#x578B;&#x7684;&#x955C;&#x50CF;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E91;&#x4E3B;&#x673A;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#x521B;&#x5EFA;&#x7684;&#x955C;&#x50CF;&#xFF0C;&#x53EF;&#x4EE5;&#x4FDD;&#x5B58;&#x4E91;&#x4E3B;&#x673A;&#x5F53;&#x65F6;&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;&#x5982;&#x56FE;7-2-10&#x6240;&#x793A;&#xFF0C;&#x70B9;&#x51FB;&#x521B;&#x5EFA;&#x955C;&#x50CF;&#x6309;&#x94AE;&#xFF0C;&#x5728;&#x65B0;&#x5F39;&#x51FA;&#x7684;&#x754C;&#x9762;&#x8F93;&#x5165;&#x5F85;&#x4FDD;&#x5B58;&#x7684;&#x955C;&#x50CF;&#x540D;&#x5B57;&#xFF0C;&#x70B9;&#x51FB;&#x786E;&#x5B9A;&#xFF0C;&#x7A0B;&#x5E8F;&#x4F1A;&#x540E;&#x53F0;&#x521B;&#x5EFA;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x3002;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x7684;&#x955C;&#x50CF;&#x670D;&#x52A1;&#x5668;&#x9700;&#x8981;&#x5728;&#x4E91;&#x4E3B;&#x673A;&#x505C;&#x6B62;&#x540E;&#x624D;&#x80FD;&#x8FDB;&#x884C;&#x6B64;&#x64CD;&#x4F5C;&#x3002;&#x521B;&#x5EFA;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x955C;&#x50CF;&#x5217;&#x8868;&#x4F1A;&#x663E;&#x793A;&#x6B64;&#x955C;&#x50CF;&#x6587;&#x4EF6; &#x3002;
+</li></ol>
+<p><img alt="png" src="../images/7-2-10.png" title="&#x56FE;7-2-10 &#x955C;&#x50CF;&#x4ED3;&#x5E93;&#x521B;&#x5EFA;&#x5728;&#x7EBF;&#x865A;&#x62DF;&#x673A;&#x955C;&#x50CF;&#x754C;&#x9762;"></p><h6 id="&#x56FE;7-2-10-&#x955C;&#x50CF;&#x4ED3;&#x5E93;&#x521B;&#x5EFA;&#x5728;&#x7EBF;&#x865A;&#x62DF;&#x673A;&#x955C;&#x50CF;&#x754C;&#x9762;">&#x56FE;7-2-10 &#x955C;&#x50CF;&#x4ED3;&#x5E93;&#x521B;&#x5EFA;&#x5728;&#x7EBF;&#x865A;&#x62DF;&#x673A;&#x955C;&#x50CF;&#x754C;&#x9762;</h6><p>16.&#x521B;&#x5EFA;&#x5FEB;&#x7167;:&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5BF9;&#x4E91;&#x4E3B;&#x673A;&#x7684;&#x6839;&#x4E91;&#x76D8;&#x8FDB;&#x884C;&#x521B;&#x5EFA;&#x5FEB;&#x7167;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x4ECE;1.4&#x7248;&#x672C;&#x540E;,Mevoco &#x652F;&#x6301;&#x5728;&#x7EBF;&#x521B;&#x5EFA;&#x5FEB;&#x7167;,&#x5373;&#x5BF9;&#x8FD0;&#x884C;&#x4E2D;&#x7684;&#x4E91;&#x4E3B;&#x673A;&#x521B;&#x5EFA;&#x5FEB;&#x7167;&#x70B9;&#x3002;&#x5982;&#x56FE;7-2-11&#x6240;&#x793A;,&#x70B9;&#x51FB;&#x521B;&#x5EFA;&#x5FEB;&#x7167;&#x6309;&#x94AE;,&#x5728;&#x65B0;&#x754C;&#x9762;&#x8F93;&#x5165;&#x5F85;&#x521B;&#x5EFA;&#x5FEB;&#x7167;&#x7684;&#x540D;&#x79F0;,&#x70B9;&#x51FB;&#x786E;&#x5B9A;&#x5373;&#x53EF;&#x5BF9;&#x6839;&#x4E91;&#x76D8;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x521B;&#x5EFA;&#x5FEB;&#x7167;&#x3002;</p><p>&#x6CE8;&#x610F;:&#x5982;&#x679C;&#x4E91;&#x4E3B;&#x673A;&#x6B63;&#x5728;&#x8FDB;&#x884C;&#x5927;&#x91CF;&#x7684;I/O&#x5E76;&#x53D1;,&#x6B64;&#x65F6;&#x521B;&#x5EFA;&#x5FEB;&#x7167;,&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x6570;&#x636E;&#x4E22;&#x5931;&#x7684;&#x98CE;&#x9669;,&#x8BF7;&#x8C28;&#x614E;&#x64CD;&#x4F5C;&#x3002;&#x4EE5;&#x9632;&#x4E07;&#x4E00;,&#x53EF;&#x4EE5;&#x5728;&#x4E91;&#x4E3B;&#x673A;&#x505C;&#x6B62;&#x540E;,&#x518D;&#x521B;&#x5EFA;&#x5FEB;&#x7167;&#x3002;&#x5982;&#x679C;&#x7528;&#x6237;&#x4ECE;&#x4F4E;&#x7248;&#x672C;&#x5347;&#x7EA7;&#x5230;&#x65B0;&#x7248;&#x672C;,&#x5728;&#x7EBF;&#x5FEB;&#x7167;&#x5E76;&#x4E0D;&#x9002;&#x7528;&#x4E8E;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x4E2D;&#x7684;&#x4E91;&#x4E3B;&#x673A;,&#x9700;&#x8981;&#x4E91;&#x4E3B;&#x673A;&#x91CD;&#x542F;&#x540E;&#x624D;&#x53EF;&#x751F;&#x6548;&#x3002;</p><p><img alt="png" src="../images/7-2-11.png" title="&#x56FE;7-2-11 &#x5FEB;&#x7167;&#x9875;&#x9762;"></p><h6 id="&#x56FE;7-2-11-&#x5FEB;&#x7167;&#x9875;&#x9762;">&#x56FE;7-2-11 &#x5FEB;&#x7167;&#x9875;&#x9762;</h6><p>17.&#x52A0;&#x8F7D;&#x7F51;&#x7EDC;:&#x7528;&#x6237;&#x53EF;&#x5BF9;&#x4E91;&#x4E3B;&#x673A;&#x52A8;&#x6001;&#x7684;&#x589E;&#x52A0;&#x7F51;&#x7EDC;,&#x4F8B;&#x5982;,&#x65B0;&#x589E;&#x4E00;&#x4E2A;Vlan&#x7F51;&#x7EDC;&#x5230;&#x4E91;&#x4E3B;&#x673A;&#x3002;&#x70B9;&#x51FB;&#x4E91;&#x4E3B;&#x673A;&#x8BE6;&#x60C5;&#x9875;&#x7684;&#x7F51;&#x7EDC;&#x680F;,&#x70B9;&#x51FB;&#x52A0;&#x8F7D;&#x6309;&#x94AE;,&#x65B0;&#x754C;&#x9762;&#x4F1A;&#x5217;&#x51FA;&#x53EF;&#x6DFB;&#x52A0;&#x7684;&#x7F51;&#x7EDC;&#x5217;&#x8868;,&#x5982;&#x56FE;7-2-12&#x6240;&#x793A;,&#x5728;&#x5217;&#x8868;&#x4E2D;&#x9009;&#x62E9;&#x53EF;&#x52A0;&#x8F7D;&#x7684;&#x7F51;&#x7EDC;,&#x5982;&#x679C;&#x5B58;&#x5728;&#x591A;&#x4E2A;&#x7F51;&#x7EDC;,&#x4E5F;&#x53EF;&#x6279;&#x91CF;&#x6DFB;&#x52A0;&#x3002;&#x6DFB;&#x52A0;&#x7F51;&#x7EDC;&#x7684;&#x65B9;&#x6CD5;&#x53EF;&#x53C2;&#x8003;&#x7B2C;12&#x7AE0;&#x7F51;&#x7EDC;&#x7BA1;&#x7406;&#x3002;&#x52A0;&#x8F7D;&#x540E;,&#x4E91;&#x4E3B;&#x673A;&#x7F51;&#x7EDC;&#x5217;&#x8868;&#x4F1A;&#x663E;&#x793A;&#x591A;&#x4E2A;&#x7F51;&#x7EDC;&#x3002;</p><p><img alt="png" src="../images/7-2-12.png" title="&#x56FE;7-2-12 &#x52A0;&#x8F7D;&#x7F51;&#x7EDC;&#x5F39;&#x51FA;&#x7684;&#x53EF;&#x9009;&#x7F51;&#x7EDC;&#x5217;&#x8868;"></p><h6 id="&#x56FE;7-2-12-&#x52A0;&#x8F7D;&#x7F51;&#x7EDC;&#x5F39;&#x51FA;&#x7684;&#x53EF;&#x9009;&#x7F51;&#x7EDC;&#x5217;&#x8868;">&#x56FE;7-2-12 &#x52A0;&#x8F7D;&#x7F51;&#x7EDC;&#x5F39;&#x51FA;&#x7684;&#x53EF;&#x9009;&#x7F51;&#x7EDC;&#x5217;&#x8868;</h6><p>18.&#x5378;&#x8F7D;&#x7F51;&#x7EDC;:&#x7528;&#x6237;&#x53EF;&#x5BF9;&#x4E91;&#x4E3B;&#x673A;&#x52A8;&#x6001;&#x7684;&#x5378;&#x8F7D;&#x7F51;&#x7EDC;,&#x4F8B;&#x5982;&#x4ECE;&#x4E91;&#x4E3B;&#x673A;&#x79FB;&#x9664;&#x4E00;&#x4E2A;&#x7F51;&#x7EDC;&#x3002;&#x5728;&#x7F51;&#x7EDC;&#x680F;&#x70B9;&#x51FB;&#x5F85;&#x5378;&#x8F7D;&#x7684;&#x7F51;&#x7EDC;,&#x70B9;&#x51FB;&#x5378;&#x8F7D;&#x5373;&#x53EF;&#x5C06;&#x7F51;&#x7EDC;&#x4ECE;&#x4E91;&#x4E3B;&#x673A;&#x79FB;&#x9664;,&#x5982;&#x56FE;7-2-13&#x6240;&#x793A;&#x3002;</p><p><img alt="png" src="../images/7-2-12.png" title="&#x56FE;7-2-13 &#x5378;&#x8F7D;&#x7F51;&#x7EDC;&#x754C;&#x9762;"></p><h6 id="&#x56FE;7-2-13-&#x5378;&#x8F7D;&#x7F51;&#x7EDC;&#x754C;&#x9762;">&#x56FE;7-2-13 &#x5378;&#x8F7D;&#x7F51;&#x7EDC;&#x754C;&#x9762;</h6><p>19.&#x4FEE;&#x6539;&#x9ED8;&#x8BA4;&#x7F51;&#x7EDC;:&#x5728;&#x591A;&#x7F51;&#x7EDC;&#x5217;&#x8868;&#x7684;&#x9ED8;&#x8BA4;&#x5217;&#x4E2D;,&#x9009;&#x62E9;&#x76F8;&#x5E94;&#x7684;&#x7F51;&#x7EDC;,&#x4F1A;&#x5F39;&#x51FA;&#x65B0;&#x754C;&#x9762;&#x8FDB;&#x884C;&#x786E;&#x8BA4;&#x64CD;&#x4F5C;,&#x70B9;&#x51FB;&#x786E;&#x5B9A;&#x540E;&#x5373;&#x53EF;&#x66F4;&#x6362;&#x9ED8;&#x8BA4;&#x7F51;&#x7EDC;&#x3002;</p><p>20.&#x8BBE;&#x7F6E;&#x9759;&#x6001;IP:IP&#x5730;&#x5740;&#x7684;&#x8BBE;&#x7F6E;&#x53EF;&#x4EE5;&#x5728;&#x65B0;&#x5EFA;&#x4E91;&#x4E3B;&#x673A;&#x524D;&#x9009;&#x62E9;&#x7F51;&#x7EDC;,&#x70B9;&#x51FB;&#x8BBE;&#x7F6E;IP&#x6309;&#x94AE;,&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#x9759;&#x6001;IP&#x5730;&#x5740;&#x3002;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x505C;&#x6B62;&#x4E91;&#x4E3B;&#x673A;&#x540E;,&#x5728;&#x4E91;&#x4E3B;&#x673A;&#x7684;&#x7F51;&#x7EDC;&#x754C;&#x9762;&#x9009;&#x62E9;&#x7F51;&#x7EDC;&#x8BBE;&#x7F6E;&#x9759;&#x6001;IP&#x5730;&#x5740;&#x3002; &#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x9759;&#x6001;IP&#x5730;&#x5740;,&#x9700;&#x907F;&#x514D;&#x4E0E;&#x73B0;&#x6709;IP&#x5730;&#x5740;&#x51B2;&#x7A81;&#x3002;</p><p>21.&#x53D6;&#x6D88;&#x9759;&#x6001;IP:&#x9488;&#x5BF9;&#x5DF2;&#x8BBE;&#x7F6E;&#x8FC7;&#x9759;&#x6001;IP&#x5730;&#x5740;&#x7684;&#x4E91;&#x4E3B;&#x673A;,&#x53EF;&#x4EE5;&#x53D6;&#x6D88;&#x9759;&#x6001;IP&#x7684;&#x8BBE;&#x7F6E;&#x3002;&#x5982;&#x56FE; 7-2-14&#x6240;&#x793A;,&#x5728;&#x505C;&#x6B62;&#x4E91;&#x4E3B;&#x673A;&#x540E;,&#x5728;&#x7F51;&#x7EDC;&#x9875;&#x9762;&#x9009;&#x62E9;&#x5F85;&#x53D6;&#x6D88;&#x8BBE;&#x7F6E;&#x7684;&#x7F51;&#x7EDC;,&#x70B9;&#x51FB;&#x53D6;&#x6D88;&#x9759;&#x6001;IP&#x6309;&#x94AE;,&#x5728;&#x65B0;&#x754C;&#x9762;&#x70B9;&#x51FB;&#x786E;&#x5B9A;,&#x5373;&#x53EF;&#x53D6;&#x6D88;&#x9759;&#x6001;IP&#x7684;&#x8BBE;&#x7F6E;&#x3002;</p><p><img alt="png" src="../images/7-2-14.png" title="&#x56FE;7-2-14 &#x53D6;&#x6D88;&#x9759;&#x6001; IP &#x754C;&#x9762;"></p><h6 id="&#x56FE;7-2-14-&#x53D6;&#x6D88;&#x9759;&#x6001;-ip-&#x754C;&#x9762;">&#x56FE;7-2-14 &#x53D6;&#x6D88;&#x9759;&#x6001; IP &#x754C;&#x9762;</h6><p>22.&#x4FEE;&#x6539;&#x540D;&#x5B57;:&#x4FEE;&#x6539;&#x4E91;&#x4E3B;&#x673A;&#x7684;&#x540D;&#x79F0;&#x3002;&#x4E91;&#x4E3B;&#x673A;&#x7684;&#x540D;&#x79F0;&#x53EF;&#x4EE5;&#x91CD;&#x590D;,&#x4F46;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x6613;&#x533A;&#x5206;&#x4E4B;&#x4E91;&#x4E3B;&#x673A;&#x540D;&#x5B57;&#x3002;UUID&#x4E3A;Mevoco&#x7CFB;&#x7EDF;&#x4E2D;&#x552F;&#x4E00;&#x786E;&#x5B9A;&#x4E91;&#x4E3B;&#x673A;&#x8EAB;&#x4EFD;&#x7684;&#x6807;&#x8BC6;&#x3002;</p><p>23.&#x4FEE;&#x6539;&#x7B80;&#x4ECB;:&#x4FEE;&#x6539;&#x4E91;&#x4E3B;&#x673A;&#x7684;&#x7B80;&#x4ECB;&#x3002;</p><p>24.&#x4FEE;&#x6539;&#x9AD8;&#x53EF;&#x7528;&#x7EA7;&#x522B;:&#x4FEE;&#x6539;&#x9AD8;&#x53EF;&#x7528;&#x7EA7;&#x522B;&#x5728;NeverStop&#x6216;None&#x6A21;&#x5F0F;&#x3002;</p><p>25.&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x6807;&#x7B7E;:&#x5BF9;&#x4E91;&#x4E3B;&#x673A;&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x6807;&#x7B7E;,&#x65B9;&#x4FBF;&#x7528;&#x6237;&#x641C;&#x7D22;&#x67E5;&#x8BE2;&#x4E91;&#x4E3B;&#x673A;&#x3002;&#x7528;&#x6237;&#x6807;&#x7B7E;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x591A;&#x4E2A;&#x3002;&#x70B9;&#x51FB;&#x7528;&#x6237;&#x6807;&#x7B7E;&#x53F3;&#x4FA7;&#x7684;&#x201C;x&#x201D;&#x53EF;&#x5BF9;&#x7528;&#x6237;&#x6807;&#x7B7E;&#x8FDB;&#x884C;&#x5220;&#x9664;&#x3002;&#x5982;&#x56FE;7-2-15&#x6240;&#x793A;:</p><p><img alt="png" src="../images/7-2-15.png" title="&#x56FE;7-2-15 &#x7528;&#x6237;&#x6807;&#x7B7E;&#x754C;&#x9762;"></p><h6 id="&#x56FE;7-2-15-&#x7528;&#x6237;&#x6807;&#x7B7E;&#x754C;&#x9762;">&#x56FE;7-2-15 &#x7528;&#x6237;&#x6807;&#x7B7E;&#x754C;&#x9762;</h6><p>26.&#x6307;&#x5B9A;&#x7269;&#x7406;&#x673A;&#x542F;&#x52A8;:&#x9488;&#x5BF9;&#x505C;&#x6B62;&#x72B6;&#x6001;&#x7684;&#x4E91;&#x4E3B;&#x673A;,&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4ECE;&#x7279;&#x5B9A;&#x7269;&#x7406;&#x673A;&#x542F;&#x52A8;,&#x6B64;&#x529F;&#x80FD;&#x53EA;&#x9002;&#x7528;&#x4E8E;&#x4F7F;&#x7528;&#x7F51;&#x7EDC;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x7684;&#x4E3B;&#x5B58;&#x50A8;&#x65B9;&#x5F0F;,&#x5982;&#x679C;&#x4E3B;&#x5B58;&#x50A8;&#x4E3A;&#x672C;&#x5730;&#x5B58;&#x50A8;,&#x6B64;&#x529F;&#x80FD;&#x53EA;&#x80FD;&#x9009;&#x62E9;&#x6839;&#x4E91;&#x76D8;&#x6240;&#x5728;&#x7684;&#x7269;&#x7406;&#x673A;&#x542F;&#x52A8;&#x3002;&#x5728;&#x70B9;&#x51FB;&#x542F;&#x52A8;(&#x6307;&#x5B9A;&#x7269;&#x7406;&#x673A;),&#x4F1A;&#x5F39;&#x51FA;&#x53EF;&#x7528;&#x7684;&#x7269;&#x7406;&#x673A;&#x754C;&#x9762;,&#x70B9;&#x51FB;&#x786E;&#x5B9A;&#x540E;,&#x4F1A;&#x76F4;&#x63A5;&#x4ECE;&#x9009;&#x62E9;&#x7684;&#x7269;&#x7406;&#x673A;&#x542F;&#x52A8;&#x3002;</p><p>27.&#x66F4;&#x6539;&#x6240;&#x6709;&#x8005;: &#x5C06;&#x4E91;&#x4E3B;&#x673A;&#x7684;&#x6240;&#x6709;&#x8005;&#x66F4;&#x6539;,&#x5177;&#x4F53;&#x53C2;&#x8003;17.4&#x66F4;&#x6539;&#x6240;&#x6709;&#x8005;&#x3002;</p><p>28.&#x68C0;&#x67E5;&#x65E5;&#x5FD7;: &#x67E5;&#x770B;&#x4E91;&#x4E3B;&#x673A;&#x7684;&#x76F8;&#x5173;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x3002;&#x5982;&#x56FE;7-2-16&#x6240;&#x793A;&#x3002;</p><p><img alt="png" src="../images/7-2-16.png" title="&#x56FE;7-2-16 &#x4E91;&#x4E3B;&#x673A;&#x65E5;&#x5FD7;&#x754C;&#x9762;"></p><h6 id="&#x56FE;7-2-16-&#x4E91;&#x4E3B;&#x673A;&#x65E5;&#x5FD7;&#x754C;&#x9762;">&#x56FE;7-2-16 &#x4E91;&#x4E3B;&#x673A;&#x65E5;&#x5FD7;&#x754C;&#x9762;</h6>
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="new-vm.html" class="navigation navigation-prev " aria-label="Previous page: 7.1 新建云主机">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="install-linux.html" class="navigation navigation-next " aria-label="Next page: 7.3 安装云主机镜像-Linux">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"7.2 单个云主机操作","level":"1.9.2","depth":2,"next":{"title":"7.3 安装云主机镜像-Linux","level":"1.9.3","depth":2,"path":"VM/install-linux.md","ref":"VM/install-linux.md","articles":[]},"previous":{"title":"7.1 新建云主机","level":"1.9.1","depth":2,"path":"VM/new-vm.md","ref":"VM/new-vm.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-fontsettings","-search","-sharing","-lunr","-search-jieba","-edit-link","-github","-livereload","splitter","toggle-chapters","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","keywords":"Mevoco用户手册","author":"Mevoco User Manual>","tail":{"Mevoco":"www.mevoco.com","Power By ZStack":"www.zstack.org"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mevoco 用户手册","language":"zh-hans","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"Mevoco 官网":"http://www.mevoco.com"}},"gitbook":"*","description":"This is the Mevoco User Manual","extension":null},"file":{"path":"VM/single-vm.md","mtime":"2016-08-05T02:01:47.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-05T02:48:08.263Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+
+    </body>
+</html>
+

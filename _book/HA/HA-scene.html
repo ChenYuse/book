@@ -1,0 +1,1696 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>13.2 云主机高可用的应用场景 · Mevoco 用户手册</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="author" content="Mevoco User Manual>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Instance-Offering/" />
+    
+    
+    <link rel="prev" href="HA-setting.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.mevoco.com" target="_blank" class="custom-link">Mevoco 官网</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../CopyRight.html">
+            
+                <a href="../CopyRight.html">
+            
+                    
+                    版权声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    引言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Introduction/">
+            
+                <a href="../Introduction/">
+            
+                    
+                    1 概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Introduction/introduct.html">
+            
+                <a href="../Introduction/introduct.html">
+            
+                    
+                    1.1 系统简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Introduction/function.html">
+            
+                <a href="../Introduction/function.html">
+            
+                    
+                    1.2 主要功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Requirement/">
+            
+                <a href="../Requirement/">
+            
+                    
+                    2 配置需求
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Requirement/network-env.html">
+            
+                <a href="../Requirement/network-env.html">
+            
+                    
+                    2.1 网络环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Requirement/hardware.html">
+            
+                <a href="../Requirement/hardware.html">
+            
+                    
+                    2.2 硬件要求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Requirement/software.html">
+            
+                <a href="../Requirement/software.html">
+            
+                    
+                    2.3 软件要求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../Requirement/zstack-centos.html">
+            
+                <a href="../Requirement/zstack-centos.html">
+            
+                    
+                    2.4 ZStack定制版CentOS 7.2安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../install/">
+            
+                <a href="../install/">
+            
+                    
+                    3 安装部署Mevoco
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../install/offline-install.html">
+            
+                <a href="../install/offline-install.html">
+            
+                    
+                    3.1 离线安装Mevoco
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../install/online-install.html">
+            
+                <a href="../install/online-install.html">
+            
+                    
+                    3.2 在线安装Mevoco
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../install/upgrade.html">
+            
+                <a href="../install/upgrade.html">
+            
+                    
+                    3.3 升级Mevoco
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../install/service.html">
+            
+                <a href="../install/service.html">
+            
+                    
+                    3.4 部署Mevoco服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../login/login.html">
+            
+                <a href="../login/login.html">
+            
+                    
+                    4 系统登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Wizard/">
+            
+                <a href="../Wizard/">
+            
+                    
+                    5 Wizard引导设置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Wizard/host.html">
+            
+                <a href="../Wizard/host.html">
+            
+                    
+                    5.1 添加物理机（计算节点）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Wizard/ps.html">
+            
+                <a href="../Wizard/ps.html">
+            
+                    
+                    5.2 添加主存储
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="../Wizard/local-storage.html">
+            
+                <a href="../Wizard/local-storage.html">
+            
+                    
+                    5.2.1 本地存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.2" data-path="../Wizard/nfs.html">
+            
+                <a href="../Wizard/nfs.html">
+            
+                    
+                    5.2.2 NFS主存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.3" data-path="../Wizard/ceph.html">
+            
+                <a href="../Wizard/ceph.html">
+            
+                    
+                    5.2.3 Ceph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.4" data-path="../Wizard/fusionStor.html">
+            
+                <a href="../Wizard/fusionStor.html">
+            
+                    
+                    5.2.4 FusionStor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5" data-path="../Wizard/sharedmountpoint.html">
+            
+                <a href="../Wizard/sharedmountpoint.html">
+            
+                    
+                    5.2.5 Shared Mount Point
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Wizard/bs.html">
+            
+                <a href="../Wizard/bs.html">
+            
+                    
+                    5.3 添加镜像服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../Wizard/instance-offering.html">
+            
+                <a href="../Wizard/instance-offering.html">
+            
+                    
+                    5.4 添加计算规格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../Wizard/image.html">
+            
+                <a href="../Wizard/image.html">
+            
+                    
+                    5.5 添加镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../Wizard/l2.html">
+            
+                <a href="../Wizard/l2.html">
+            
+                    
+                    5.6 添加二层网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../Wizard/l3.html">
+            
+                <a href="../Wizard/l3.html">
+            
+                    
+                    5.7 添加三层网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Main/">
+            
+                <a href="../Main/">
+            
+                    
+                    6 主界面管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Main/language.html">
+            
+                <a href="../Main/language.html">
+            
+                    
+                    6.1 选择语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../Main/base-setting.html">
+            
+                <a href="../Main/base-setting.html">
+            
+                    
+                    6.2 基础设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../Main/change-password.html">
+            
+                <a href="../Main/change-password.html">
+            
+                    
+                    6.3 修改密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../VM/">
+            
+                <a href="../VM/">
+            
+                    
+                    7 云主机管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../VM/new-vm.html">
+            
+                <a href="../VM/new-vm.html">
+            
+                    
+                    7.1 新建云主机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../VM/single-vm.html">
+            
+                <a href="../VM/single-vm.html">
+            
+                    
+                    7.2 单个云主机操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../VM/install-linux.html">
+            
+                <a href="../VM/install-linux.html">
+            
+                    
+                    7.3 安装云主机镜像-Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../VM/install-windows.html">
+            
+                <a href="../VM/install-windows.html">
+            
+                    
+                    7.4 安装云主机镜像-Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../VM/ssh-key.html">
+            
+                <a href="../VM/ssh-key.html">
+            
+                    
+                    7.5 SSH公钥管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../VM/batch-vm-create.html">
+            
+                <a href="../VM/batch-vm-create.html">
+            
+                    
+                    7.6 批量新建云主机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../VM/batch-vm-operation.html">
+            
+                <a href="../VM/batch-vm-operation.html">
+            
+                    
+                    7.7 批量操作云主机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../VM/vm-monitor.html">
+            
+                <a href="../VM/vm-monitor.html">
+            
+                    
+                    7.8 云主机监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Host/">
+            
+                <a href="../Host/">
+            
+                    
+                    8 物理机管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Host/single-host.html">
+            
+                <a href="../Host/single-host.html">
+            
+                    
+                    8.1 单物理机操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Host/batach-host.html">
+            
+                <a href="../Host/batach-host.html">
+            
+                    
+                    8.2 批量物理机操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../Host/host-monitor.html">
+            
+                <a href="../Host/host-monitor.html">
+            
+                    
+                    8.3 物理机监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Image/">
+            
+                <a href="../Image/">
+            
+                    
+                    9 镜像管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../Image/single-image.html">
+            
+                <a href="../Image/single-image.html">
+            
+                    
+                    9.1 单镜像操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../Image/batach-image.html">
+            
+                <a href="../Image/batach-image.html">
+            
+                    
+                    9.2 批量镜像操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../Storage/">
+            
+                <a href="../Storage/">
+            
+                    
+                    10 存储管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../Storage/ps.html">
+            
+                <a href="../Storage/ps.html">
+            
+                    
+                    10.1 主存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../Storage/bs.html">
+            
+                <a href="../Storage/bs.html">
+            
+                    
+                    10.2 镜像服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Volumn/">
+            
+                <a href="../Volumn/">
+            
+                    
+                    11 云盘管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../Network/">
+            
+                <a href="../Network/">
+            
+                    
+                    12 网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../Network/network-setting.html">
+            
+                <a href="../Network/network-setting.html">
+            
+                    
+                    12.1 网络设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../Network/sg.html">
+            
+                <a href="../Network/sg.html">
+            
+                    
+                    12.2 安全组管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.2.1" data-path="../Network/new-sq.html">
+            
+                <a href="../Network/new-sq.html">
+            
+                    
+                    12.2.1 新建安全组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2.2" data-path="../Network/add-sg-rule.html">
+            
+                <a href="../Network/add-sg-rule.html">
+            
+                    
+                    12.2.2 添加安全组规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2.3" data-path="../Network/attach-sg-to-vm.html">
+            
+                <a href="../Network/attach-sg-to-vm.html">
+            
+                    
+                    12.2.3 添加云主机给安全组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../Network/eip.html">
+            
+                <a href="../Network/eip.html">
+            
+                    
+                    12.3 弹性IP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    13 云主机高可用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="HA-setting.html">
+            
+                <a href="HA-setting.html">
+            
+                    
+                    13.1 云主机高可用设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15.2" data-path="HA-scene.html">
+            
+                <a href="HA-scene.html">
+            
+                    
+                    13.2 云主机高可用的应用场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../Instance-Offering/">
+            
+                <a href="../Instance-Offering/">
+            
+                    
+                    14 计算规格管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../Volume-Offering/">
+            
+                <a href="../Volume-Offering/">
+            
+                    
+                    15 云盘规格管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../Perf-Console-Proxy-Resource/">
+            
+                <a href="../Perf-Console-Proxy-Resource/">
+            
+                    
+                    16 性能监控、控制台代理与资源查询和排序
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../Perf-Console-Proxy-Resource/perf-monitor.html">
+            
+                <a href="../Perf-Console-Proxy-Resource/perf-monitor.html">
+            
+                    
+                    16.1 性能监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../Perf-Console-Proxy-Resource/console-proxy.html">
+            
+                <a href="../Perf-Console-Proxy-Resource/console-proxy.html">
+            
+                    
+                    16.2 控制台代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../Perf-Console-Proxy-Resource/resource-sort.html">
+            
+                <a href="../Perf-Console-Proxy-Resource/resource-sort.html">
+            
+                    
+                    16.3 资源查询和排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../User-MN/">
+            
+                <a href="../User-MN/">
+            
+                    
+                    17 用户管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../User-MN/account.html">
+            
+                <a href="../User-MN/account.html">
+            
+                    
+                    17.1 账户
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../User-MN/user-group.html">
+            
+                <a href="../User-MN/user-group.html">
+            
+                    
+                    17.2 用户及用户组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../User-MN/sharing-cancel.html">
+            
+                <a href="../User-MN/sharing-cancel.html">
+            
+                    
+                    17.3 资源共享与召回
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.4" data-path="../User-MN/change-owner.html">
+            
+                <a href="../User-MN/change-owner.html">
+            
+                    
+                    17.4 更改所有者
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.5" data-path="../User-MN/billing-setting.html">
+            
+                <a href="../User-MN/billing-setting.html">
+            
+                    
+                    17.5 计费设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.6" data-path="../User-MN/billing-account.html">
+            
+                <a href="../User-MN/billing-account.html">
+            
+                    
+                    17.6 账户计费
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../exception/">
+            
+                <a href="../exception/">
+            
+                    
+                    18 其他配置和异常处理指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../exception/exception.html">
+            
+                <a href="../exception/exception.html">
+            
+                    
+                    18.1 安装及部署异常处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1.1" data-path="../exception/install.html">
+            
+                <a href="../exception/install.html">
+            
+                    
+                    18.1.1 安装异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.1.2" data-path="../exception/upgrade.html">
+            
+                <a href="../exception/upgrade.html">
+            
+                    
+                    18.1.2 升级异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.1.3" data-path="../exception/service.html">
+            
+                <a href="../exception/service.html">
+            
+                    
+                    18.1.3 服务异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="../exception/login.html">
+            
+                <a href="../exception/login.html">
+            
+                    
+                    18.2 登录异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3" data-path="../exception/wizard-exception.html">
+            
+                <a href="../exception/wizard-exception.html">
+            
+                    
+                    18.3 引导设置异常处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.3.1" data-path="../exception/host.html">
+            
+                <a href="../exception/host.html">
+            
+                    
+                    18.3.1 添加物理机异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3.2" data-path="../exception/ps.html">
+            
+                <a href="../exception/ps.html">
+            
+                    
+                    18.3.2 添加主存储异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3.3" data-path="../exception/bs.html">
+            
+                <a href="../exception/bs.html">
+            
+                    
+                    18.3.3 添加镜像服务器异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3.4" data-path="../exception/instance-offering.html">
+            
+                <a href="../exception/instance-offering.html">
+            
+                    
+                    18.3.4 添加计算规格异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3.5" data-path="../exception/image.html">
+            
+                <a href="../exception/image.html">
+            
+                    
+                    18.3.5 添加云主机镜像异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3.6" data-path="../exception/l2.html">
+            
+                <a href="../exception/l2.html">
+            
+                    
+                    18.3.6 添加二层网络异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3.7" data-path="../exception/l3.html">
+            
+                <a href="../exception/l3.html">
+            
+                    
+                    18.3.7 添加三层网络配置异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.4" data-path="../exception/create-vm.html">
+            
+                <a href="../exception/create-vm.html">
+            
+                    
+                    18.4 创建云主机异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.5" data-path="../exception/main-page.html">
+            
+                <a href="../exception/main-page.html">
+            
+                    
+                    18.5 主界面异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../other-settting/">
+            
+                <a href="../other-settting/">
+            
+                    
+                    19 其他设置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" data-path="../other-setting/2nd-mn.html">
+            
+                <a href="../other-setting/2nd-mn.html">
+            
+                    
+                    19.1 安装第二个管理节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" data-path="../other-setting/single-mysql.html">
+            
+                <a href="../other-setting/single-mysql.html">
+            
+                    
+                    19.2 配置独立的MySQL服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.3" data-path="../other-setting/single-rabbitmq.html">
+            
+                <a href="../other-setting/single-rabbitmq.html">
+            
+                    
+                    19.3 配置独立的RabbitMQ服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.4" data-path="../other-setting/zstack.properties.html">
+            
+                <a href="../other-setting/zstack.properties.html">
+            
+                    
+                    19.4 zstack.properties核心配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.5" data-path="../other-setting/change-ip.html">
+            
+                <a href="../other-setting/change-ip.html">
+            
+                    
+                    19.5 更新Mevoco相关服务器IP地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.6" data-path="../other-setting/change-host-password.html">
+            
+                <a href="../other-setting/change-host-password.html">
+            
+                    
+                    19.6 Mevoco计算节点密码变更
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.7" data-path="../other-setting/change-host-env.html">
+            
+                <a href="../other-setting/change-host-env.html">
+            
+                    
+                    19.7 Mevoco管理节点更改物理环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.8" data-path="../other-setting/mysql-backup-recover.html">
+            
+                <a href="../other-setting/mysql-backup-recover.html">
+            
+                    
+                    19.8 Mevoco数据库备份与恢复  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.9" data-path="../other-setting/change-network-device.html">
+            
+                <a href="../other-setting/change-network-device.html">
+            
+                    
+                    19.9 CentOS7网卡设备编号变更
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.10" data-path="../other-setting/enlarge-local-storage.html">
+            
+                <a href="../other-setting/enlarge-local-storage.html">
+            
+                    
+                    19.10 本地存储空间扩容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.11" data-path="../other-setting/log-collection.html">
+            
+                <a href="../other-setting/log-collection.html">
+            
+                    
+                    19.11 日志Log收集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.12" data-path="../other-setting/upgrade-zstack-iso.html">
+            
+                <a href="../other-setting/upgrade-zstack-iso.html">
+            
+                    
+                    19.12 升级ZStack定制版ISO的yum源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.13" data-path="../other-setting/cassandra-backup-recover.html">
+            
+                <a href="../other-setting/cassandra-backup-recover.html">
+            
+                    
+                    19.13 Mevoco Cassandra数据库备份与恢复
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../authorization/">
+            
+                <a href="../authorization/">
+            
+                    
+                    20 授权
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../support/">
+            
+                <a href="../support/">
+            
+                    
+                    21 技术支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >13.2 云主机高可用的应用场景</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="132-&#x4E91;&#x4E3B;&#x673A;&#x9AD8;&#x53EF;&#x7528;&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;">13.2 &#x4E91;&#x4E3B;&#x673A;&#x9AD8;&#x53EF;&#x7528;&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;</h1><p>1.&#x4E91;&#x4E3B;&#x673A;&#x5F02;&#x5E38;&#x5173;&#x673A;</p><p>&#x4E0D;&#x7BA1;&#x662F;&#x901A;&#x8FC7;UI&#x505C;&#x6B62;&#x4E91;&#x4E3B;&#x673A;&#x8FD8;&#x662F;&#x5728;&#x4E91;&#x4E3B;&#x673A;&#x4E0A;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x5BFC;&#x81F4;&#x4E91;&#x4E3B;&#x673A;&#x5173;&#x673A;&#xFF0C;&#x8BBE;&#x7F6E;&#x9AD8;&#x53EF;&#x7528;&#x7EA7;&#x522B;&#x4E3A;NeverStop&#x7684;&#x4E91;&#x4E3B;&#x673A;&#x90FD;&#x4F1A;&#x81EA;&#x52A8;&#x91CD;&#x542F;&#xFF0C;&#x5982;&#x56FE;13-2-1&#xFF0C;13-2-2&#xFF0C;13-2-3&#x6240;&#x793A;&#x3002;</p><p><img alt="png" src="../images/13-2-1.png" title="&#x56FE;13-2-1 NeverStop&#x4E91;&#x4E3B;&#x673A;&#x5173;&#x673A;&#x540E;&#x81EA;&#x52A8;&#x91CD;&#x542F;&#xFF08;1&#xFF09;"></p><h6 id="&#x56FE;13-2-1-neverstop&#x4E91;&#x4E3B;&#x673A;&#x5173;&#x673A;&#x540E;&#x81EA;&#x52A8;&#x91CD;&#x542F;&#xFF08;1&#xFF09;">&#x56FE;13-2-1 NeverStop&#x4E91;&#x4E3B;&#x673A;&#x5173;&#x673A;&#x540E;&#x81EA;&#x52A8;&#x91CD;&#x542F;&#xFF08;1&#xFF09;</h6><p><img alt="png" src="../images/13-2-2.png" title="&#x56FE;13-2-2 NeverStop&#x4E91;&#x4E3B;&#x673A;&#x5173;&#x673A;&#x540E;&#x81EA;&#x52A8;&#x91CD;&#x542F;&#xFF08;2&#xFF09;"></p><h6 id="&#x56FE;13-2-2-neverstop&#x4E91;&#x4E3B;&#x673A;&#x5173;&#x673A;&#x540E;&#x81EA;&#x52A8;&#x91CD;&#x542F;&#xFF08;2&#xFF09;">&#x56FE;13-2-2 NeverStop&#x4E91;&#x4E3B;&#x673A;&#x5173;&#x673A;&#x540E;&#x81EA;&#x52A8;&#x91CD;&#x542F;&#xFF08;2&#xFF09;</h6><p><img alt="png" src="../images/13-2-3.png" title="&#x56FE;13-2-3 NeverStop&#x4E91;&#x4E3B;&#x673A;&#x5173;&#x673A;&#x540E;&#x81EA;&#x52A8;&#x91CD;&#x542F;&#xFF08;3&#xFF09;"></p><h6 id="&#x56FE;13-2-3-neverstop&#x4E91;&#x4E3B;&#x673A;&#x5173;&#x673A;&#x540E;&#x81EA;&#x52A8;&#x91CD;&#x542F;&#xFF08;3&#xFF09;">&#x56FE;13-2-3 NeverStop&#x4E91;&#x4E3B;&#x673A;&#x5173;&#x673A;&#x540E;&#x81EA;&#x52A8;&#x91CD;&#x542F;&#xFF08;3&#xFF09;</h6><p>2.&#x4E91;&#x4E3B;&#x673A;&#x6240;&#x5728;&#x7684;&#x7269;&#x7406;&#x673A;&#x5F02;&#x5E38;&#x65AD;&#x7535;&#x3001;&#x5F02;&#x5E38;&#x65AD;&#x7F51;&#x3001;&#x5F02;&#x5E38;&#x5173;&#x673A;</p><p>&#x5982;&#x56FE;13-2-4&#xFF0C;13-2-5&#xFF0C;13-2-6&#x6240;&#x793A;&#x3002;</p><p>&#x82E5;&#x4E3B;&#x5B58;&#x50A8;&#x4E3A;&#x672C;&#x5730;&#x5B58;&#x50A8;&#xFF0C;&#x5F53;&#x7269;&#x7406;&#x673A;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x60C5;&#x51B5;&#x65F6;&#xFF0C;&#x5176;&#x4E0A;&#x7684;&#x4E91;&#x4E3B;&#x673A;&#x4F1A;&#x8F6C;&#x4E3A;stopped&#x72B6;&#x6001;&#x3002;</p><p>&#x82E5;&#x4E3B;&#x5B58;&#x50A8;&#x4E3A;&#x7F51;&#x7EDC;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#xFF0C;&#x5F53;&#x7269;&#x7406;&#x673A;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x60C5;&#x51B5;&#x65F6;&#xFF0C;&#x5176;&#x4E0A;&#x7684;NeverStop&#x4E91;&#x4E3B;&#x673A;&#x4F1A;&#x81EA;&#x52A8;&#x8FC1;&#x79FB;&#x5230;&#x5176;&#x4ED6;&#x53EF;&#x7528;&#x7684;&#x7269;&#x7406;&#x673A;&#x4E0A;&#x3002;</p><p><img alt="png" src="../images/13-2-4.png" title="&#x56FE;13-2-4&#x7269;&#x7406;&#x673A;&#x5F02;&#x5E38;&#x65F6;NeverStop&#x4E91;&#x4E3B;&#x673A;&#x81EA;&#x52A8;&#x8FC1;&#x79FB;&#xFF08;1&#xFF09;"></p><h6 id="&#x56FE;13-2-4&#x7269;&#x7406;&#x673A;&#x5F02;&#x5E38;&#x65F6;neverstop&#x4E91;&#x4E3B;&#x673A;&#x81EA;&#x52A8;&#x8FC1;&#x79FB;&#xFF08;1&#xFF09;">&#x56FE;13-2-4&#x7269;&#x7406;&#x673A;&#x5F02;&#x5E38;&#x65F6;NeverStop&#x4E91;&#x4E3B;&#x673A;&#x81EA;&#x52A8;&#x8FC1;&#x79FB;&#xFF08;1&#xFF09;</h6><p><img alt="png" src="../images/13-2-5.png" title="&#x56FE;13-2-5&#x7269;&#x7406;&#x673A;&#x5F02;&#x5E38;&#x65F6;NeverStop&#x4E91;&#x4E3B;&#x673A;&#x81EA;&#x52A8;&#x8FC1;&#x79FB;&#xFF08;2&#xFF09;"></p><h6 id="&#x56FE;13-2-5&#x7269;&#x7406;&#x673A;&#x5F02;&#x5E38;&#x65F6;neverstop&#x4E91;&#x4E3B;&#x673A;&#x81EA;&#x52A8;&#x8FC1;&#x79FB;&#xFF08;2&#xFF09;">&#x56FE;13-2-5&#x7269;&#x7406;&#x673A;&#x5F02;&#x5E38;&#x65F6;NeverStop&#x4E91;&#x4E3B;&#x673A;&#x81EA;&#x52A8;&#x8FC1;&#x79FB;&#xFF08;2&#xFF09;</h6><p><img alt="png" src="../images/13-2-6.png" title="&#x56FE;13-2-6&#x7269;&#x7406;&#x673A;&#x5F02;&#x5E38;&#x65F6;NeverStop&#x4E91;&#x4E3B;&#x673A;&#x81EA;&#x52A8;&#x8FC1;&#x79FB;&#xFF08;3&#xFF09;"></p><h6 id="&#x56FE;13-2-6&#x7269;&#x7406;&#x673A;&#x5F02;&#x5E38;&#x65F6;neverstop&#x4E91;&#x4E3B;&#x673A;&#x81EA;&#x52A8;&#x8FC1;&#x79FB;&#xFF08;3&#xFF09;">&#x56FE;13-2-6&#x7269;&#x7406;&#x673A;&#x5F02;&#x5E38;&#x65F6;NeverStop&#x4E91;&#x4E3B;&#x673A;&#x81EA;&#x52A8;&#x8FC1;&#x79FB;&#xFF08;3&#xFF09;</h6><p>3.&#x4E91;&#x4E3B;&#x673A;&#x6240;&#x5728;&#x7684;&#x7269;&#x7406;&#x673A;&#x8FDB;&#x5165;&#x7EF4;&#x62A4;&#x6A21;&#x5F0F;</p><p>&#x5982;&#x56FE;13-2-7&#xFF0C;13-2-8&#x6240;&#x793A;&#x3002;</p><p>&#x82E5;&#x4E3B;&#x5B58;&#x50A8;&#x4E3A;&#x672C;&#x5730;&#x5B58;&#x50A8;&#xFF0C;&#x5F53;&#x7269;&#x7406;&#x673A;&#x8FDB;&#x5165;&#x7EF4;&#x62A4;&#x6A21;&#x5F0F;&#x540E;&#xFF0C;&#x5176;&#x4E0A;&#x7684;&#x4E91;&#x4E3B;&#x673A;&#x4F1A;&#x8FDB;&#x5165;stopped&#x72B6;&#x6001;&#x3002;</p><p>&#x82E5;&#x4E3B;&#x5B58;&#x50A8;&#x4E3A;&#x7F51;&#x7EDC;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#xFF0C;&#x5F53;&#x7269;&#x7406;&#x673A;&#x8FDB;&#x5165;&#x7EF4;&#x62A4;&#x6A21;&#x5F0F;&#x540E;&#xFF0C;&#x5176;&#x4E0A;&#x7684;&#x4E91;&#x4E3B;&#x673A;&#x4E0D;&#x7BA1;&#x662F;&#x5426;&#x8BBE;&#x7F6E;&#x4E86;&#x9AD8;&#x53EF;&#x7528;&#x7EA7;&#x522B;&#x90FD;&#x4F1A;&#x8FC1;&#x79FB;&#x5230;&#x5176;&#x4ED6;&#x53EF;&#x7528;&#x7684;&#x7269;&#x7406;&#x673A;&#x4E0A;&#x3002;</p><p><img alt="png" src="../images/13-2-7.png" title="&#x56FE;13-2-7&#x7269;&#x7406;&#x673A;&#x8FDB;&#x5165;&#x7EF4;&#x62A4;&#x6A21;&#x5F0F;&#x65F6;&#x4E91;&#x4E3B;&#x673A;&#x81EA;&#x52A8;&#x8FC1;&#x79FB;&#xFF08;1&#xFF09;"></p><h6 id="&#x56FE;13-2-7&#x7269;&#x7406;&#x673A;&#x8FDB;&#x5165;&#x7EF4;&#x62A4;&#x6A21;&#x5F0F;&#x65F6;&#x4E91;&#x4E3B;&#x673A;&#x81EA;&#x52A8;&#x8FC1;&#x79FB;&#xFF08;1&#xFF09;">&#x56FE;13-2-7&#x7269;&#x7406;&#x673A;&#x8FDB;&#x5165;&#x7EF4;&#x62A4;&#x6A21;&#x5F0F;&#x65F6;&#x4E91;&#x4E3B;&#x673A;&#x81EA;&#x52A8;&#x8FC1;&#x79FB;&#xFF08;1&#xFF09;</h6><p><img alt="png" src="../images/13-2-8.png" title="&#x56FE;13-2-8&#x7269;&#x7406;&#x673A;&#x8FDB;&#x5165;&#x7EF4;&#x62A4;&#x6A21;&#x5F0F;&#x65F6;&#x4E91;&#x4E3B;&#x673A;&#x81EA;&#x52A8;&#x8FC1;&#x79FB;&#xFF08;2&#xFF09;"></p><h6 id="&#x56FE;13-2-8&#x7269;&#x7406;&#x673A;&#x8FDB;&#x5165;&#x7EF4;&#x62A4;&#x6A21;&#x5F0F;&#x65F6;&#x4E91;&#x4E3B;&#x673A;&#x81EA;&#x52A8;&#x8FC1;&#x79FB;&#xFF08;2&#xFF09;">&#x56FE;13-2-8&#x7269;&#x7406;&#x673A;&#x8FDB;&#x5165;&#x7EF4;&#x62A4;&#x6A21;&#x5F0F;&#x65F6;&#x4E91;&#x4E3B;&#x673A;&#x81EA;&#x52A8;&#x8FC1;&#x79FB;&#xFF08;2&#xFF09;</h6><p>&#x6CE8;&#x610F;&#xFF1A;&#x4EE5;&#x4E0B;&#x60C5;&#x51B5;&#xFF0C;&#x4E91;&#x4E3B;&#x673A;&#x7684;&#x9AD8;&#x53EF;&#x7528;&#x65E0;&#x6CD5;&#x5B9E;&#x73B0;&#x7684;&#xFF1A;</p><p>1.&#x53EA;&#x6709;&#x4E00;&#x53F0;&#x7269;&#x7406;&#x673A;&#xFF1B;</p><p>2.&#x5176;&#x4ED6;&#x7269;&#x7406;&#x673A;&#x7684;&#x53EF;&#x7528;&#x8D44;&#x6E90;&#x4E0D;&#x8DB3;&#xFF1B;</p><p>3.&#x5176;&#x4ED6;&#x7269;&#x7406;&#x673A;&#x88AB;&#x505C;&#x7528;&#x3002;</p><p>&#x53E6;&#x5916;&#xFF0C;&#x5728;&#x5378;&#x8F7D;&#x4E91;&#x4E3B;&#x673A;&#x7F51;&#x7EDC;&#x3001;&#x5220;&#x9664;&#x96C6;&#x7FA4;&#x7F51;&#x7EDC;&#x7B49;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E91;&#x4E3B;&#x673A;&#x7684;&#x9AD8;&#x53EF;&#x7528;&#x7EA7;&#x522B;&#x5BF9;&#x4E91;&#x4E3B;&#x673A;&#x7684;&#x72B6;&#x6001;&#x662F;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x5F71;&#x54CD;&#x7684;&#x3002;</p>
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="HA-setting.html" class="navigation navigation-prev " aria-label="Previous page: 13.1 云主机高可用设置">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Instance-Offering/" class="navigation navigation-next " aria-label="Next page: 14 计算规格管理">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"13.2 云主机高可用的应用场景","level":"1.15.2","depth":2,"next":{"title":"14 计算规格管理","level":"1.16","depth":1,"path":"Instance-Offering/README.md","ref":"Instance-Offering/README.md","articles":[]},"previous":{"title":"13.1 云主机高可用设置","level":"1.15.1","depth":2,"path":"HA/HA-setting.md","ref":"HA/HA-setting.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-fontsettings","-search","-sharing","-lunr","-search-jieba","-edit-link","-github","-livereload","splitter","toggle-chapters","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css"},"pluginsConfig":{"splitter":{},"toggle-chapters":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","keywords":"Mevoco用户手册","author":"Mevoco User Manual>","tail":{"Mevoco":"www.mevoco.com","Power By ZStack":"www.zstack.org"},"pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mevoco 用户手册","language":"zh-hans","links":{"sharing":{"all":false,"facebook":false,"google":false,"twitter":false,"weibo":false},"sidebar":{"Mevoco 官网":"http://www.mevoco.com"}},"gitbook":"*","description":"This is the Mevoco User Manual","extension":null},"file":{"path":"HA/HA-scene.md","mtime":"2016-08-05T02:01:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-05T02:48:08.263Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+
+    </body>
+</html>
+
